@@ -235,5 +235,14 @@ button{
 	width: 100%;
 }
 
+.payment-method-options{
+	input[type=radio]{
+		width: auto !important;
+	}
 
+	label{
+		display: inline;
+		margin-left: rem(5);
+	}
+}
 
