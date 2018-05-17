@@ -22,7 +22,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-9">
-				<?php include("partial_views/stepthree.php"); ?>
+				<?php include("partial_views/coach.php"); ?>
 			</div>
 			<div class="col-12 col-md-3">
 				<div class="summary">Summary</div>
@@ -37,5 +37,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-nice-select@1.1.0/js/jquery.nice-select.min.js"></script>
 	<script src="dist/js/scripts.js"></script>
+	<script src="dist/js/coach.js"></script>
 	</body>
 </html>

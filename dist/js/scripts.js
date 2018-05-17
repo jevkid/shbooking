@@ -13,5 +13,5 @@ $(".option").on("click", function(){
 
 
 $.getJSON('dist/js/cabins.js', function (data) {
-    console.log(data.items[0]);
+    // console.log(data.items[0]);
   });

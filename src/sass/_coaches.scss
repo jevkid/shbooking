@@ -1,0 +1,86 @@
+
+.coachSelect {
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px 20px;
+    .aisle {
+      padding: 15px;
+    }
+    li.seatMap {
+      width: 25px;
+      height: 25px;
+      margin: 5px;
+      &:first-child {
+        margin-left: 40px;
+      }
+    }
+    .coachList {
+      padding: 0 15px 0 60px;
+      li {
+        content: '';
+        list-style: none;
+        display: inline-flex;
+        &.map {
+          margin-right: 20px;
+        }
+        &.available {
+          @include icon($white, 1px solid $brand-secondary, 25px, 5px, 10px);
+          &:hover {
+            cursor: pointer;
+            background-color: #79b928;
+          }
+        }
+        &.occupied {
+          @include icon($brand-secondary, none, 25px, 5px, 10px);
+        }
+        &.facility {
+          @include icon(red, 1px solid red, 25px, 5px, 10px);
+        }
+        &.selected {
+          @include icon(#79b928, 1px solid #79b928, 25px, 5px, 10px);
+        }
+      }
+    }
+  }
+  
+  .coachInfo {
+    margin: 10px 0;
+    display: inline-flex;
+    padding: 0 10px;
+    .selected {    
+      padding: 10px;
+      span.icon {
+        @include icon(#79b928, 1px solid #79b928, 45px, 5px 12px, 5px);
+      }
+    }
+    .available {    
+      padding: 10px;
+      span.icon {
+        @include icon($white, 1px solid $brand-secondary, 45px, 5px 12px, 5px);
+      }
+    }
+    .occupied {    
+      padding: 10px;
+      span.icon {
+        @include icon($brand-secondary, none, 45px, 5px 12px, 5px);
+      }
+    }
+    .facilities {    
+      padding: 10px;
+      span.icon {
+        @include icon(red, 1px solid red, 45px, 5px 12px, 5px);
+      }
+    }
+  }
+  .coachSelection {
+    border: 1px solid grey;
+  }
+  
+  .customerList {
+    .seat {
+      list-style: none;
+  
+    }
+  }

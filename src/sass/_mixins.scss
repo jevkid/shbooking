@@ -26,3 +26,12 @@
         @content;
     }
 }
+
+@mixin icon($background, $border, $size, $padding, $margin) {
+    background-color: $background;
+    border: $border;
+    width: $size;
+    height: $size;
+    padding: $padding;
+    margin-right: $margin;
+}
