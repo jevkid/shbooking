@@ -3,17 +3,46 @@ $(document).ready(function() {
 });
 
 $('html').on('click', '[data-current-step]', function() {
-	var currentStep = $(this).data('currentStep');
+	$('[data-previous-step]').removeClass('hidden');
+	var currentStep;
+	$('[data-step]').each(function(){
+		if(!$(this).hasClass('hidden')){
+			currentStep = $(this).data('step');
+		}
+	});
 	var nextNav = $('[data-step="' + currentStep + '"]').data('next');
 
 	$('[data-step="' + currentStep + '"]').addClass('hidden');	
 	var nextStep = currentStep + 1;
 	$('[data-step="' + nextStep + '"]').removeClass('hidden');
-	$(this).data('currentStep', nextStep);
 
 	$('[data-nav-step]').removeClass('active');
 	$('[data-nav-step="' + nextNav + '"]').addClass('active');
 
+	$('html, body').animate({ scrollTop: 0 }, 'slow');
+});
+
+$('html').on('click', '[data-previous-step]', function(e) {
+	e.preventDefault();
+	// Find current step
+	var currentStep;
+	var prevNav;
+	$('[data-step]').each(function(){
+		if(!$(this).hasClass('hidden')){
+			currentStep = $(this).data('step');
+			prevNav = $(this).prev().data('prev');
+		}
+	});
+	// Hide current step
+	$('[data-step="' + currentStep + '"]').addClass('hidden');
+	$('[data-step="' + (currentStep - 1) + '"]').removeClass('hidden');
+	// Show next step
+	$('[data-nav-step]').removeClass('active');
+	$('[data-nav-step="' + prevNav + '"]').addClass('active');
+	// Make sure to hide if step === 1
+	if(currentStep == 2){
+		$(this).addClass('hidden');
+	}
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
 });
 

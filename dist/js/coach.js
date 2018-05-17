@@ -157,9 +157,10 @@ function init(){
         coachId: "67", seatId: "101713", seatNumber: "9D", status: "Available", row: "9", seatInRow: "1"
       }
     ];
-    coaches.sort(function(coach){
-    //   console.log(coach.row);
+    coaches.sort(function(a, b){
+      return a.seatId - b.seatId;
     });
+
     var numPax = document.querySelector('[data-pax]').getAttribute('data-pax');
     var numSeats = coaches.length / 4;
   
@@ -180,6 +181,8 @@ function init(){
         var liClass = coaches[key].status === 'Available' ? "available" : (coaches[key].facility ? "Facility" : "occupied");
         li.setAttribute("id", coaches[key].seatNumber);
         li.setAttribute("data-coach-id", coaches[key].coachId);
+        li.setAttribute("data-seat-id", coaches[key].seatId);
+        li.setAttribute("data-seat-num", coaches[key].seatNumber);
         li.setAttribute("class", liClass);
         
         li.addEventListener('click', function(){
@@ -187,18 +190,17 @@ function init(){
   
           if(count <= numPax) {
             selectedSeats.push({
-              coach: coaches[key].coachId, 
-              seat: coaches[key].seatId
+              coach: this.getAttribute('data-coach-id'), 
+              seat: this.getAttribute('data-seat-id')
             });
-    
             var seat = document.createElement('li');
             seat.setAttribute('class', 'seat');
-            var text = document.createTextNode('Passenger ' + count + ': ' + coaches[key].seatNumber);
+            var text = document.createTextNode('Passenger ' + count + ': ' + this.getAttribute('data-seat-num'));
             seat.appendChild(text);
             document.getElementById('customerMap').appendChild(seat);
     
-            li.removeAttribute("class", "available");
-            li.setAttribute("class", "selected");
+            this.removeAttribute("class", "available");
+            this.setAttribute("class", "selected");
   
             /* 
              TODO:

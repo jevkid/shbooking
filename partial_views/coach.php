@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-12">
-		<p class="step-title">Step 3</p>
+		<p class="step-title">Step 2</p>
 		<p class="step-section-title">Seat Selection</p>
     </div>
     <div>
