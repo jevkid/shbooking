@@ -22,10 +22,41 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-8">
-				<?php include("partial_views/guestdetails.php"); ?>
+				<div data-step="1" data-next="travel" data-prev="party">
+					<?php include("partial_views/stepone.php"); ?>
+				</div>
+				<div class="hidden" data-step="2" data-next="travel" data-prev="travel">
+					<?php include("partial_views/steptwo.php"); ?>
+				</div>
+				<div class="hidden" data-step="3" data-next="travel" data-prev="travel">
+					<?php include("partial_views/coach.php"); ?>
+				</div>
+				<div class="hidden" data-step="4" data-next="accom" data-prev="travel">
+					<?php include("partial_views/air.php"); ?>
+				</div>
+				<div class="hidden" data-step="5" data-next="details" data-prev="accom">
+					<?php include("partial_views/stepthree.php"); ?>
+				</div>
+				<div class="hidden" data-step="6" data-next="extras" data-prev="details">
+					<?php include("partial_views/guestdetails.php"); ?>
+				</div>
+				<div class="hidden" data-step="7" data-next="confirm" data-prev="extras">
+					<?php include("partial_views/extras.php"); ?>
+				</div>
+				<div class="hidden" data-step="8" data-prev="confirm">
+					<?php include("partial_views/confirm.php"); ?>
+				</div>
 			</div>
 			<div class="col-12 col-md-4">
 				<div class="summary">Summary</div>
+			</div>
+			<div class="col-12 col-md-8">
+				<div class="pull-right">
+					<button type="button" data-current-step="1">Continue</button>
+				</div>
+				<div class="pull-left">
+					<a href="#" class="back-button hidden" data-previous-step>Back</a>
+				</div>
 			</div>
 		</div>
 	</div>

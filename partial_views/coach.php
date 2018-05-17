@@ -1,5 +1,16 @@
 <div class="row">
-    <div class="coaches pull-left">
+    <div class="col-12">
+		<p class="step-title">Step 2</p>
+		<p class="step-section-title">Seat Selection</p>
+    </div>
+    <div>
+        <div class="col-12">
+            <div class="panel">
+                <div class="panel-body">Select your seats to Amsterdam</div>                
+            </div>
+        </div>
+    </div>
+    <div class="col-12 coaches pull-left">
         <div class="coachInfo">
             <div class="selected">
                 <span class="icon"></span>
@@ -9,9 +20,9 @@
                 <span class="icon"></span>
                 <span class="text">Available</span>
             </div>
-            <div class="occupied">
+            <div class="reserved">
                 <span class="icon"></span>
-                <span class="text">Occupied</span>
+                <span class="text">Reserved</span>
             </div>
             <div class="facilities">
                 <span class="icon"></span>
@@ -34,11 +45,19 @@
                 <li class="map">D</li>
             </ul>
         </div>
-    </div>
-    <div class="customer">
-        <div class="customerSelect" data-pax=4>
-            <h3>Your Seats</h3>
-            <ul class="customerList" id="customerMap"></ul>
+        <div class="row">
+            <div class="col-6">
+                <div class="vantage-info">
+                    <div class="vantage-title">Vantage Seats</div>
+                    <div class="vantage-text">Our vantage seats premium seating can offer exceptional views</div>
+                </div>
+            </div>
+            <div class="col-4 customer">
+                <div class="customerSelect hidden" data-pax=4>
+                    <h3>Your Seats</h3>
+                    <ul class="customerList" id="customerMap"></ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>

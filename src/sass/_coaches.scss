@@ -1,10 +1,14 @@
 
+.coaches {
+  margin: 1.8rem 0;
+
+}
 .coachSelect {
     width: fit-content;
-    padding: 10px;
+    padding: 10px 0;
     border: 1px solid grey;
     border-radius: 5px;
-    margin: 10px 20px;
+    margin: 10px 0;
     .aisle {
       padding: 15px;
     }
@@ -32,7 +36,7 @@
             background-color: #79b928;
           }
         }
-        &.occupied {
+        &.reserved {
           @include icon($brand-secondary, none, 25px, 5px, 10px);
         }
         &.facility {
@@ -41,6 +45,9 @@
         &.selected {
           @include icon(#79b928, 1px solid #79b928, 25px, 5px, 10px);
         }
+        &.vantage {
+          @include icon(#EEE8AA, 1px solid #EEE8AA, 25px, 5px, 10px);
+        }
       }
     }
   }
@@ -48,39 +55,71 @@
   .coachInfo {
     margin: 10px 0;
     display: inline-flex;
-    padding: 0 10px;
     .selected {    
-      padding: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
       span.icon {
-        @include icon(#79b928, 1px solid #79b928, 45px, 5px 12px, 5px);
+        @include icon(#79b928, 1px solid #79b928, 45px, 6px 15px, 5px);
       }
     }
     .available {    
-      padding: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
       span.icon {
-        @include icon($white, 1px solid $brand-secondary, 45px, 5px 12px, 5px);
+        @include icon($white, 1px solid $brand-secondary, 45px, 6px 15px, 5px);
       }
     }
-    .occupied {    
-      padding: 10px;
+    .reserved {    
+      padding-bottom: 10px;
+      padding-right: 10px;
       span.icon {
-        @include icon($brand-secondary, none, 45px, 5px 12px, 5px);
+        @include icon($brand-secondary, none, 45px, 6px 15px, 5px);
       }
     }
     .facilities {    
-      padding: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
       span.icon {
-        @include icon(red, 1px solid red, 45px, 5px 12px, 5px);
+        @include icon(red, 1px solid red, 45px, 6px 15px, 5px);
       }
     }
   }
   .coachSelection {
     border: 1px solid grey;
   }
+
+  .customerSelect {
+    padding: 0.8rem 0;
+  }
   
   .customerList {
+    padding: 0.8rem 0;
     .seat {
       list-style: none;
   
+    }
+  }
+
+  .vantage-info {
+    background-color: #EEE8AA;
+    position: relative;
+    margin-left: 80px;
+    margin-top: 5px;
+    .vantage-text {
+      padding: 10px;
+    }
+    .vantage-title {
+      font-weight: 500;
+      padding: 10px;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: -15px;
+      width: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid #EEE8AA;
     }
   }
