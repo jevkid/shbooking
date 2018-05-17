@@ -44,7 +44,7 @@
 					<?php include("partial_views/extras.php"); ?>
 				</div>
 				<div class="hidden" data-step="8" data-prev="confirm">
-					<?php include("partial_views/confirm.php"); ?>
+					<?php include("partial_views/payment.php"); ?>
 				</div>
 			</div>
 			<div class="col-12 col-md-4">
