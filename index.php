@@ -21,10 +21,10 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-9">
-				<?php include("partial_views/coach.php"); ?>
+			<div class="col-12 col-md-8">
+				<?php include("partial_views/air.php"); ?>
 			</div>
-			<div class="col-12 col-md-3">
+			<div class="col-12 col-md-4">
 				<div class="summary">Summary</div>
 			</div>
 		</div>

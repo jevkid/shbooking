@@ -10,6 +10,7 @@ p{
 	background-color: $light-grey;
 	padding: 2rem;
 	text-align: center;
+	margin: 0.8rem 0;
 }
 
 .popular{
@@ -33,6 +34,7 @@ p{
 	font-weight: 500;
 	letter-spacing: -0.4px;
 	margin: 0;
+	padding: 0.8rem 0;
 }
 .step-section-title{
 	font-size: rem(38);
@@ -42,6 +44,11 @@ p{
 	margin-top: rem(-10);
 	border-bottom: 1px solid $border-grey;
 	text-transform: capitalize;
+}
+
+.step-section-text{
+	font-size: 16px;
+	font-weight: 500;
 }
 
 .section-header{
@@ -60,6 +67,34 @@ p{
 	margin-bottom: 2rem;
 }
 
+.section {
+	padding: 0.8rem 0;
+	margin: 1.5rem 0;
+	
+	.section-title {
+		font-weight: 500;
+	}
+}
+
+.info {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: $border-grey;
+	color: white;
+	padding: 1px 7px;
+	margin-right: 5px;
+	font-family: monospace;
+	font-size: 24px;
+    font-weight: 600;
+}
+
+.info-text {
+	font-size: 12px;
+	color: grey;
+}
+
+
 /*==================================
 =            Form Items            =
 ==================================*/
@@ -72,7 +107,7 @@ label{
 
 .nice-select{
 	width: 100% !important;
-	border-colour: $border-grey !important;
+	border-color: $border-grey !important;
 }
 
 input{
@@ -102,6 +137,17 @@ button{
 		background-color: darken($green, 2%);
 	}
 }
+
+.panel {
+	border: 1px solid $border-grey;
+
+	.panel-body {
+		padding: 0.8rem;
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
 
 /*==================================
 =             Sections             =
@@ -151,9 +197,6 @@ button{
 	height: rem(230);
 	margin-bottom: 1rem;
 }
-
-
-
 
 
 
