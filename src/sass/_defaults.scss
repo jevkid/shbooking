@@ -29,8 +29,21 @@ footer{
 	background-color: $light-grey;
 	padding: 2rem;
 }
+
 .hidden {
 	display: none;
+}
+
+.text-accent-1{
+	color: $green;
+}
+
+.text-accent-2{
+	color: $yellow;
+}
+
+.required{
+	color: $error-red;
 }
 /*=============================================
 =           	Titles & Headers             =
@@ -107,6 +120,10 @@ footer{
 =            Form Items            =
 ==================================*/
 
+.validation-error{
+	border-color: $error-red;
+}
+
 label{
 	display: block;
 	width:100%;
@@ -156,6 +173,17 @@ button{
 	}
 }
 
+.find-address, .enter-manually{
+	width: 49%;
+	margin-top: rem(29);
+}
+
+.form-section-title{
+	font-size: rem(18);
+	color: $blue;
+	border-bottom: 1px dashed $border-grey;
+	padding-bottom: rem(5);
+}
 
 /*==================================
 =             Sections             =
@@ -208,6 +236,7 @@ button{
 
 .group{
 	margin-bottom: 1rem;
+	width: 100%;
 }
 
 
