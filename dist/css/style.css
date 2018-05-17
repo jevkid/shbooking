@@ -19,6 +19,11 @@ p {
   color: #85b503;
   display: none !important; }
 
+footer {
+  margin-top: 2rem;
+  background-color: #f1f2f3;
+  padding: 2rem; }
+
 /*=============================================
 =           	Titles & Headers             =
 =============================================*/
@@ -119,28 +124,33 @@ button {
   height: 15.3333333333rem;
   margin-bottom: 1rem; }
 
+.group {
+  margin-bottom: 1rem; }
+
 .bookingNav {
-  background-color: #005FAA; }
+  background-color: #f1f2f3;
+  margin-bottom: 1rem; }
   .bookingNav ul {
-    padding: 1px;
-    width: 100%; }
+    padding: 0;
+    width: 100%;
+    margin-bottom: 0; }
     .bookingNav ul li {
       float: left;
       width: 16.6%;
-      margin: 5px 0;
       color: #ccc;
       font-size: 16px;
       text-align: center;
       padding: 15px 13px;
       position: relative;
       font-family: "Roboto", Arial, sans-serif !important;
-      color: white;
+      color: #005FAA;
       list-style: none; }
       @media screen and (max-width: 767px) {
         .bookingNav ul li {
           display: none; } }
       .bookingNav ul li.active {
-        background-color: #0068b3; }
+        color: white;
+        background-color: #0068b9; }
         @media screen and (max-width: 767px) {
           .bookingNav ul li.active {
             background: none;
@@ -165,5 +175,106 @@ button {
         padding-right: 5px; }
       .bookingNav ul li span.stepText {
         font-weight: 300; }
+
+.coachSelect {
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 10px 20px; }
+  .coachSelect .aisle {
+    padding: 15px; }
+  .coachSelect li.seatMap {
+    width: 25px;
+    height: 25px;
+    margin: 5px; }
+    .coachSelect li.seatMap:first-child {
+      margin-left: 40px; }
+  .coachSelect .coachList {
+    padding: 0 15px 0 60px; }
+    .coachSelect .coachList li {
+      content: '';
+      list-style: none;
+      display: inline-flex; }
+      .coachSelect .coachList li.map {
+        margin-right: 20px; }
+      .coachSelect .coachList li.available {
+        background-color: #ffffff;
+        border: 1px solid #005FAA;
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        margin-right: 10px; }
+        .coachSelect .coachList li.available:hover {
+          cursor: pointer;
+          background-color: #79b928; }
+      .coachSelect .coachList li.occupied {
+        background-color: #005FAA;
+        border: none;
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        margin-right: 10px; }
+      .coachSelect .coachList li.facility {
+        background-color: red;
+        border: 1px solid red;
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        margin-right: 10px; }
+      .coachSelect .coachList li.selected {
+        background-color: #79b928;
+        border: 1px solid #79b928;
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        margin-right: 10px; }
+
+.coachInfo {
+  margin: 10px 0;
+  display: inline-flex;
+  padding: 0 10px; }
+  .coachInfo .selected {
+    padding: 10px; }
+    .coachInfo .selected span.icon {
+      background-color: #79b928;
+      border: 1px solid #79b928;
+      width: 45px;
+      height: 45px;
+      padding: 5px 12px;
+      margin-right: 5px; }
+  .coachInfo .available {
+    padding: 10px; }
+    .coachInfo .available span.icon {
+      background-color: #ffffff;
+      border: 1px solid #005FAA;
+      width: 45px;
+      height: 45px;
+      padding: 5px 12px;
+      margin-right: 5px; }
+  .coachInfo .occupied {
+    padding: 10px; }
+    .coachInfo .occupied span.icon {
+      background-color: #005FAA;
+      border: none;
+      width: 45px;
+      height: 45px;
+      padding: 5px 12px;
+      margin-right: 5px; }
+  .coachInfo .facilities {
+    padding: 10px; }
+    .coachInfo .facilities span.icon {
+      background-color: red;
+      border: 1px solid red;
+      width: 45px;
+      height: 45px;
+      padding: 5px 12px;
+      margin-right: 5px; }
+
+.coachSelection {
+  border: 1px solid grey; }
+
+.customerList .seat {
+  list-style: none; }
 
 /*# sourceMappingURL=style.css.map */
