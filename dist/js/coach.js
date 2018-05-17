@@ -55,10 +55,10 @@ function init(){
         coachId: "67", seatId: "101683", seatNumber: "1B", status: "Reserved", row: "1", seatInRow: "3"
       },
       {
-        coachId: "67", seatId: "101682", seatNumber: "1C", status: "Reserved", row: "1", seatInRow: "2"
+        coachId: "67", seatId: "101682", seatNumber: "1C", status: "Vantage", row: "1", seatInRow: "2"
       },
       {
-        coachId: "67", seatId: "101681", seatNumber: "1D", status: "Reserved", row: "1", seatInRow: "1"
+        coachId: "67", seatId: "101681", seatNumber: "1D", status: "Vantage", row: "1", seatInRow: "1"
       },
       {
         coachId: "67", seatId: "101688", seatNumber: "2A", status: "Reserved", row: "2", seatInRow: "4"
@@ -178,7 +178,7 @@ function init(){
     for(var key in coaches){
       if(coaches.hasOwnProperty(key)){
         var li = document.createElement('li');
-        var liClass = coaches[key].status === 'Available' ? "available" : (coaches[key].facility ? "Facility" : "occupied");
+        var liClass = coaches[key].status.toLowerCase();
         li.setAttribute("id", coaches[key].seatNumber);
         li.setAttribute("data-coach-id", coaches[key].coachId);
         li.setAttribute("data-seat-id", coaches[key].seatId);
@@ -189,6 +189,7 @@ function init(){
           count++;
   
           if(count <= numPax) {
+            document.querySelector('[data-pax]').removeAttribute('class', 'hidden');
             selectedSeats.push({
               coach: this.getAttribute('data-coach-id'), 
               seat: this.getAttribute('data-seat-id')
