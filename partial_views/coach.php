@@ -1,4 +1,15 @@
 <div class="row">
+    <div class="col-12">
+		<p class="step-title">Step 3</p>
+		<p class="step-section-title">Seat Selection</p>
+    </div>
+    <div>
+        <div class="col-12">
+            <div class="panel">
+                <div class="panel-body">Select your seats to Amsterdam</div>
+            </div>
+        </div>
+    </div>
     <div class="coaches pull-left">
         <div class="coachInfo">
             <div class="selected">

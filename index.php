@@ -21,11 +21,37 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-8">
+			<div class="col-12 col-md-8" data-step="1" data-next="travel">
+				<?php include("partial_views/stepone.php"); ?>
+			</div>
+			<div class="col-12 col-md-8 hidden" data-step="2" data-next="travel">
+				<?php include("partial_views/steptwo.php"); ?>
+			</div>
+			<div class="col-12 col-md-8 hidden" data-step="3" data-next="travel">
+				<?php include("partial_views/coach.php"); ?>
+			</div>
+			<div class="col-12 col-md-8 hidden" data-step="4" data-next="accom">
 				<?php include("partial_views/air.php"); ?>
+			</div>
+			<div class="col-12 col-md-8 hidden" data-step="5" data-next="details">
+				<?php include("partial_views/stepthree.php"); ?>
+			</div>
+			<div class="col-12 col-md-8 hidden" data-step="6" data-next="extras">
+				<?php include("partial_views/guestdetails.php"); ?>
+			</div>
+			<div class="col-12 col-md-8 hidden" data-step="7" data-next="confirm">
+				<?php include("partial_views/extras.php"); ?>
+			</div>
+			<div class="col-12 col-md-8 hidden" data-step="8">
+				<?php include("partial_views/confirm.php"); ?>
 			</div>
 			<div class="col-12 col-md-4">
 				<div class="summary">Summary</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 text-right">
+				<button type="button" data-current-step="1">Continue</button>
 			</div>
 		</div>
 	</div>

@@ -96,7 +96,4 @@
 
 		</section>
 	</div>
-	<div class="col-12 text-right">
-		<button>Continue</button>
-	</div>
 </div>
