@@ -335,4 +335,17 @@ button {
 .customerList .seat {
   list-style: none; }
 
+table {
+  margin: 1.5rem 0; }
+  table th {
+    padding: 0.5em; }
+  table .table-row-underline {
+    border-bottom: 1px solid #dadada; }
+  table .table-row-color-alt {
+    background-color: white; }
+    table .table-row-color-alt:nth-child(odd) {
+      background-color: #eee; }
+  table td {
+    padding: 0.5rem; }
+
 /*# sourceMappingURL=style.css.map */
