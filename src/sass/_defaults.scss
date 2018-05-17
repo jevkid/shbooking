@@ -23,6 +23,12 @@ p{
 	display: none !important;
 }
 
+footer{
+	margin-top: 2rem;
+	background-color: $light-grey;
+	padding: 2rem;
+}
+
 /*=============================================
 =           	Titles & Headers             =
 =============================================*/
@@ -152,7 +158,9 @@ button{
 	margin-bottom: 1rem;
 }
 
-
+.group{
+	margin-bottom: 1rem;
+}
 
 
 

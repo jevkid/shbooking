@@ -22,7 +22,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-9">
-				<?php include("partial_views/coach.php"); ?>
+				<?php include("partial_views/stepthree.php"); ?>
 			</div>
 			<div class="col-12 col-md-3">
 				<div class="summary">Summary</div>
@@ -30,6 +30,15 @@
 		</div>
 	</div>
 
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+				&copy; Shearings 1903 - <?= date(Y); ?>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
