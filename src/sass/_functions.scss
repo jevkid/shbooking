@@ -1,0 +1,41 @@
+/// Strips the unit from a number.
+///
+/// @param {Number (With Unit)} $value
+///
+/// @example scss - Usage
+///   $dimension: strip-units(10em);
+///
+/// @example css - CSS Output
+///   $dimension: 10;
+///
+/// @return {Number (Unitless)}
+@function strip-units($value) {
+    @return ($value / ($value * 0 + 1));
+}
+
+// Convert pixels to rems - DO NOT DELETE
+// eg. for a relational value of 12px write rem(12)
+// Assumes $em-base is the font-size of <html>
+@function rem($pxval) {
+    @if not unitless($pxval) {
+        $pxval: strip-units($pxval);
+    }
+
+    $base: $global-font-size;
+
+    @if not unitless($base) {
+        $base: strip-units($base);
+    }
+
+    @return ($pxval / $base) * 1rem;
+}
+
+// Dynamically change text color based on a background color
+@function set-text-color($color) {
+    @if (lightness($color) > 50) {
+        @return darken($color, 80%); // Lighter backgorund, return dark color
+    }
+    @else {
+        @return white; // Darker background, return light color
+    }
+}

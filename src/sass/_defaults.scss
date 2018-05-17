@@ -1,0 +1,161 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+p{
+	color: $charcoal;
+}
+
+.summary{
+	background-color: $light-grey;
+	padding: 2rem;
+	text-align: center;
+}
+
+.popular{
+	color: $yellow;
+	font-size: rem(20);
+	font-weight: 600;
+}
+
+.success-check{
+	color: $green;
+	display: none !important;
+}
+
+/*=============================================
+=           	Titles & Headers             =
+=============================================*/
+
+.step-title{
+	font-size: rem(24);
+	color: $grey;
+	font-weight: 500;
+	letter-spacing: -0.4px;
+	margin: 0;
+}
+.step-section-title{
+	font-size: rem(38);
+	color: $brand-secondary;
+	font-weight: 300;
+	letter-spacing: -0.4px;
+	margin-top: rem(-10);
+	border-bottom: 1px solid $border-grey;
+	text-transform: capitalize;
+}
+
+.section-header{
+	border-bottom: 1px solid #ccc;
+	font-size: rem(20);
+	padding-bottom: rem(10);
+	margin-bottom: 1rem;
+}
+
+.subtitle{
+	font-size: rem(22);
+}
+
+.section-intro{
+	font-size: rem(14);
+	margin-bottom: 2rem;
+}
+
+/*==================================
+=            Form Items            =
+==================================*/
+
+label{
+	display: block;
+	width:100%;
+	font-weight: 500;
+}
+
+.nice-select{
+	width: 100% !important;
+	border-colour: $border-grey !important;
+}
+
+input{
+	padding: 0.48rem 0.8rem;
+	width: 100%;
+	border-radius: $border-radius;
+	border: 1px solid $border-grey;
+	outline: none !important;
+}
+
+.form-row{
+	margin-bottom: 1rem;
+}
+
+button{
+	background-color: $green;
+	border-radius: $border-radius;
+	padding: 0.5rem 2rem;
+	border: none;
+	color: white;
+	font-weight: 400;
+	transition: $transition-default;
+	outline:  none !important;
+
+	&:hover{
+		cursor: pointer;
+		background-color: darken($green, 2%);
+	}
+}
+
+/*==================================
+=             Sections             =
+==================================*/
+
+
+.multi-options{
+	.option{
+		padding: 0.8rem;
+		border: 1px solid $border-grey;
+		transition: .3s;
+		background-color: $light-grey;
+		margin-bottom: rem(10);
+		
+		label{
+			display: inline;
+			position: relative;
+			top: 2px;
+			margin-left: 0.3rem;
+		}
+
+		input[type="radio"]{
+			width: auto;
+		}
+
+		.price{
+			color: $green;
+			font-weight: 500;
+			margin-left: 1.4rem;
+		}
+
+		&.active{
+			background-color: lighten($yellow, 35%);
+			border: 1px solid $yellow;
+		}
+
+		ul{
+			columns: 3;
+			list-style-position: inside;
+			padding-left: 0;
+		}
+	}
+}
+
+.room-cabin-image{
+	width: 100%;
+	height: rem(230);
+	margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+

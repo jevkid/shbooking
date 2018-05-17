@@ -1,0 +1,64 @@
+.bookingNav {
+  background-color: $brand-secondary;
+
+  ul {
+    padding: 1px;
+    width: 100%;
+
+    li {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      float: left;
+      width: 16.6%;
+      margin: 5px 0;
+      color: #ccc;
+      font-size: 16px;
+      text-align: center;
+      padding: 15px 13px;
+      position: relative;
+      font-family: $font-family !important;
+      color: white;
+      list-style: none;
+
+      &.active {
+        @media screen and (max-width: 767px) {
+          background: none;
+          display: inline;
+          text-align: center;
+          white-space: nowrap;
+
+          &:after {
+            display: none;
+          }
+        }
+
+        background-color: $tertiary;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: -12px;
+          width: 0;
+          height: 0;
+          border-top: 26px solid transparent;
+          border-left: 12px solid #0068b3;
+          border-bottom: 26px solid transparent;
+          opacity: 1;
+        }
+      }
+
+      span.stepNumber {
+        font-weight: 500;
+
+        padding-right: 5px;
+      }
+
+      span.stepText {
+        font-weight: 300;
+      }
+    }
+  }
+}

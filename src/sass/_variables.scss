@@ -1,0 +1,148 @@
+
+
+
+// COLOUR VARIABLES
+$tertiary: #0068b3;
+$white: #fff;
+$black: #000;
+
+// SHEARINGS HOLIDAYS
+$blue: #005FAA;
+$blue-darker: darken($blue, 8%);
+$blue-dark: #003f62;
+$border-grey: #dadada;
+$burgandy: #a40046;
+$charcoal: #444444;
+$cool-blue: #71ccd2;
+$coast-teal: #156571;
+$coast-pink: #aa4162;
+$evening-blue: #0f6cb6;
+$grey: #666666;
+$green: #85b503;
+$gold: #ae9a63;
+$light-blue: #b8d5ea;
+$light-green: #c1d72e;
+$light-grey: #f1f2f3;
+$light-slate-grey: #778899;
+$light-yellow: #fdc85a;
+$mid-blue: #50B1CB;
+$olive: #b49f0c;
+$orange: #f36d21;
+$pale-blue: #e6f5ff;
+$pink: #c10d4e;
+$sea-blue: #00abcd;
+$sale-red: #BC0D29;
+$sale-red-alt: /*#E14E4B*/ #eb4d4b;
+$sky-blue: #57b0e3;
+$tangerine: #f89b1c;
+$white: #ffffff;
+$yellow: #febb30;
+$self-drive: #393a52;
+
+// BAY HOTELS
+$bay-blue: #4C5AA5;
+$bay-purple: #465bb3;
+$bay-orange: #ffac00;
+$bay-dark-blue: #2D2B7A;
+$bay-light-blue: #40BEE0;
+$bay-red: #C81F21;
+$bay-green: #78B32B;
+$bay-cream: #FBD892;
+$bay-light-pink: #EF7D7F;
+$bay-pink: #E94190;
+
+// COAST & COUNTRY
+$coast-hearth-stone: #6E634D;
+$coast-river-bed: #9F907B;
+$coast-storm-clouds: #C4BCAE;
+$coast-straw-hat: #F6E4BA;
+$coast-vintage-gold: #D6BE4D;
+$coast-old-emerald: #6CAF83;
+$coast-azure-sky: #71B6E1;
+$coast-fresh-lyche: #C91113;
+$coast-natural-slate: #3C3C3B;
+$coast-sandstorm: #F7D069;
+$coast-burnt-orange: #DD730F;
+$coast-soft-lichen: #90BFB4;
+
+// SHEARINGS LEISURE GROUP
+$slg-mid-blue: #67b1e2;
+$slg-blue-charcoal: #262F36;
+
+// NATIONAL HOLIDAYS
+$national-orange: #f6743a;
+$national-light-blue: #D1E9F5;
+$national-blue: #1c5bab;
+
+// UK BREAKAWAYS
+$breakaways-orange: #f6743a;
+$breakaways-purple: #942d97;
+
+// CALEDONIAN TRAVEL
+$caledonian-red: #f03f37;
+$caledonian-blue: #1c5bab;
+$caledonian-light-blue: #D1E9F5;
+
+// SHARED SYSTEM COLOURS
+$error-red: #DC3541;
+
+// SOCIAL MEDIA COLOURS
+$facebook-blue: #29487d;
+$twitter-blue: #1DA1F2;
+$twitter-dark-gray: #657786;
+$twitter-light-gray: #AAB8C2;
+
+
+
+
+
+
+//=============================================
+//=                   FONTS                   =
+//=============================================
+$font-family: 'Roboto', Arial, sans-serif;
+$font-family-secondary: 'Lato', Arial, sans-serif;
+$global-font-size: 15px;
+$global-line-height: 1.5;
+
+//=============================================
+//=              BRAND DEFAULTS               =
+//=============================================
+$brand-primary: $yellow;
+$brand-secondary: $blue;
+
+// MISC
+$border-radius: 3px;
+
+//=============================================
+//=              HERO GRADIENT                =
+//=============================================
+
+// Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100&0+19,0.88+100
+$gradient-ff: -moz-linear-gradient(top, rgba(125,126,125,0) 0%, rgba(111,112,111,0) 19%, rgba(51,51,51,0.88) 100%); // FF3.6-15
+$gradient-chrome: -webkit-linear-gradient(top, rgba(125,126,125,0) 0%,rgba(111,112,111,0) 19%,rgba(51,51,51,0.88) 100%); // Chrome10-25,Safari5.1-6
+$gradient: linear-gradient(to bottom, rgba(125,126,125,0) 0%,rgba(111,112,111,0) 19%,rgba(51,51,51,0.88) 100%); // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+$gradient-ie6-9: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007d7e7d', endColorstr='#e0333333',GradientType=0 ); // IE6-9
+
+//=============================================
+//=            VIDEO HERO SETTINGS            =
+//=============================================
+$video-hero-opacity: 0.3;
+
+//=============================================
+//=                TRANSITIONS                =
+//=============================================
+$transition-default: .3s;
+
+//=============================================
+//=       RESPONSIVE BREAKPOINT SIZES         =
+//=============================================
+$breakpoints: ( 
+    'xxl' : 1199, 
+    'xl' : 1024, 
+    'lrg' : 991, 
+    'med' : 768, 
+    'sml' : 600, 
+    'xs' : 415, 
+    'xxs' : 320 
+) !default;
