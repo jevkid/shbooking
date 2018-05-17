@@ -8,7 +8,8 @@ p {
 .summary {
   background-color: #f1f2f3;
   padding: 2rem;
-  text-align: center; }
+  text-align: center;
+  margin: 0.8rem 0; }
 
 .popular {
   color: #febb30;
@@ -24,6 +25,15 @@ footer {
   background-color: #f1f2f3;
   padding: 2rem; }
 
+.text-accent-1 {
+  color: #85b503; }
+
+.text-accent-2 {
+  color: #febb30; }
+
+.required {
+  color: #DC3541; }
+
 /*=============================================
 =           	Titles & Headers             =
 =============================================*/
@@ -32,7 +42,8 @@ footer {
   color: #666666;
   font-weight: 500;
   letter-spacing: -0.4px;
-  margin: 0; }
+  margin: 0;
+  padding: 0.8rem 0; }
 
 .step-section-title {
   font-size: 2.5333333333rem;
@@ -42,6 +53,10 @@ footer {
   margin-top: -0.6666666667rem;
   border-bottom: 1px solid #dadada;
   text-transform: capitalize; }
+
+.step-section-text {
+  font-size: 16px;
+  font-weight: 500; }
 
 .section-header {
   border-bottom: 1px solid #ccc;
@@ -56,9 +71,34 @@ footer {
   font-size: 0.9333333333rem;
   margin-bottom: 2rem; }
 
+.section {
+  padding: 0.8rem 0;
+  margin: 1.5rem 0; }
+  .section .section-title {
+    font-weight: 500; }
+
+.info {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #dadada;
+  color: white;
+  padding: 1px 7px;
+  margin-right: 5px;
+  font-family: monospace;
+  font-size: 24px;
+  font-weight: 600; }
+
+.info-text {
+  font-size: 12px;
+  color: grey; }
+
 /*==================================
 =            Form Items            =
 ==================================*/
+.validation-error {
+  border-color: #DC3541; }
+
 label {
   display: block;
   width: 100%;
@@ -66,7 +106,7 @@ label {
 
 .nice-select {
   width: 100% !important;
-  border-colour: #dadada !important; }
+  border-color: #dadada !important; }
 
 input {
   padding: 0.48rem 0.8rem;
@@ -90,6 +130,23 @@ button {
   button:hover {
     cursor: pointer;
     background-color: #7eab03; }
+
+.panel {
+  border: 1px solid #dadada; }
+  .panel .panel-body {
+    padding: 0.8rem;
+    font-size: 18px;
+    font-weight: 500; }
+
+.find-address, .enter-manually {
+  width: 49%;
+  margin-top: 1.9333333333rem; }
+
+.form-section-title {
+  font-size: 1.2rem;
+  color: #005FAA;
+  border-bottom: 1px dashed #dadada;
+  padding-bottom: 0.3333333333rem; }
 
 /*==================================
 =             Sections             =
@@ -125,7 +182,8 @@ button {
   margin-bottom: 1rem; }
 
 .group {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  width: 100%; }
 
 .bookingNav {
   background-color: #f1f2f3;

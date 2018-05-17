@@ -14,4 +14,10 @@ $(".option").on("click", function(){
 
 $.getJSON('dist/js/cabins.js', function (data) {
     // console.log(data.items[0]);
-  });
+	});
+	
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip({
+			html: true
+		})
+	})
