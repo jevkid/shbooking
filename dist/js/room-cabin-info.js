@@ -1,6 +1,6 @@
-$.getJSON('dist/js/cabins.json', function (data) {
-	console.log(data.items[0]);
-});
+// $.getJSON('dist/js/cabins.json', function (data) {
+// 	console.log(data.items[0]);
+// });
 
 
 var active = $(".multi-options .option").find("input[type=radio]:checked").data("id");
@@ -13,8 +13,6 @@ $.getJSON('dist/js/cabins.json', function (data) {
 
 $(".multi-options .option").on("click", function(){
     var selectedRoomCabin = $(this).find("input[type=radio]").data("id");
-    
-    console.log(selectedRoomCabin);
 
     $.getJSON('dist/js/cabins.json', function (data) {
         $(".accomm-desc .room-title").text(data.items[selectedRoomCabin].title);

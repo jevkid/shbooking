@@ -192,6 +192,10 @@ input{
 	border-radius: $border-radius;
 	border: 1px solid $border-grey;
 	outline: none !important;
+
+	&.error{
+		border-color: $error-red;
+	}
 }
 
 .form-row{
@@ -372,4 +376,10 @@ button{
 			margin-right: 0.3rem;
 		}
 	}
+}
+
+.guest{
+	background-color: $light-grey;
+	padding: 1rem;
+	margin-bottom: 1rem;
 }
