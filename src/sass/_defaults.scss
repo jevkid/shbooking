@@ -6,6 +6,16 @@ p{
 	color: $charcoal;
 }
 
+a{
+	color: $blue !important;
+	text-decoration: underline !important;
+	cursor: pointer;
+}
+
+a:link{
+	color: $blue;
+}
+
 .summary{
 	background-color: $light-grey;
 	padding: 2rem;
@@ -100,6 +110,24 @@ footer{
 	font-size: rem(20);
 	padding-bottom: rem(10);
 	margin-bottom: 1rem;
+
+	button{
+		font-size: rem(14);
+	}
+}
+
+.hidden-section-header{
+	font-size: rem(20);
+	padding: rem(10) 0;
+	margin-bottom: 1rem;
+
+	p{
+		margin-top: 5px;
+	}
+
+	button{
+		font-size: rem(14);
+	}
 }
 
 .subtitle{
@@ -184,6 +212,17 @@ button{
 		cursor: pointer;
 		background-color: darken($green, 2%);
 	}
+
+	&.secondary{
+		background-color: transparent;
+		border: 2px solid $green;
+		color: $green;
+	}
+
+	&.active{
+		background-color: $green;
+		color: white;
+	}
 }
 
 .panel {
@@ -220,6 +259,8 @@ button{
 		transition: .3s;
 		background-color: $light-grey;
 		margin-bottom: rem(10);
+		cursor: pointer;
+		border-radius: $border-radius;
 		
 		label{
 			display: inline;
@@ -278,4 +319,57 @@ button{
 
 .hidden{
 	display: none;
+}
+
+.room-extras{
+	display: none;
+
+	.extra-img{
+		width: 100%;
+		height: rem(120);
+		margin-bottom: 0.5rem;
+	}
+	.item-title{
+		margin-bottom: 0.5rem;
+		font-weight: 500;
+	}
+
+	button{
+		width: 100%;
+	}
+	.room-extra{
+		margin-bottom: 1rem;
+	}
+
+	.price{
+		color: $green;
+		font-weight: 500;
+		margin: 0;
+	}
+}
+
+.item-title{
+	font-size: rem(22);
+}
+
+.special-requirements{
+	display: none;
+
+	ul{
+		columns: 3;
+		list-style-position: inside;
+		padding-left: 0;
+
+		li{
+			list-style-type: none;
+		}
+
+		input, label{
+			width: auto !important;
+		}
+
+		input{
+			margin-right: 0.3rem;
+		}
+	}
 }

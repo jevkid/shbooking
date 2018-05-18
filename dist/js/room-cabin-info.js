@@ -23,3 +23,17 @@ $(".multi-options .option").on("click", function(){
     });
 
 });
+
+$(".add-to-booking").on("click", function(){
+    $(this).addClass("animated rubberBand").addClass("active").text("Added to Booking!");
+})
+
+$(".show-extras").on("click", function(){
+    $(".room-extras").slideToggle();
+    $(this).text($(this).text() == 'Show Extras' ? 'Hide Extras' : 'Show Extras');
+});
+
+$("a[data-action='open-requests']").on("click", function(){
+    $(".special-requirements").show();
+    $(this).parent().hide();
+});

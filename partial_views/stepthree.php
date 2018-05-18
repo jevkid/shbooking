@@ -94,4 +94,48 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="row">
+		<div class="col-12">
+			<div class="hidden-section-header">
+				<div class="row">
+					<div class="col-9"><p>Extras for MS Serenade 2</p></div>
+					<div class="col-3 text-right"><button class="secondary show-extras">Show Extras</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="room-extras">
+		<div class="row">
+			<div class="col-12 col-md-4 room-extra"><img src="http://booking.cwallermedia.co.uk/img/carparking.jpg" alt="Car Parking" class="extra-img"><p class="item-title">Car Parking</p><p class="price">+ £45 per night</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex similique pariatur sapiente quisquam et nobis in ipsa magnam beatae at excepturi enim aperiam illo nihil, blanditiis incidunt itaque dicta vero?</p><button class="secondary add-to-booking radial-in">Add to Booking</button></div>
+			<div class="col-12 col-md-4 room-extra"><img src="http://booking.cwallermedia.co.uk/img/wifi.jpg" alt="Wi-Fi" class="extra-img"><p class="item-title">Wi-Fi</p> <p class="price">+ £5 per night</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex similique pariatur sapiente quisquam et nobis in ipsa magnam beatae at excepturi enim aperiam illo nihil, blanditiis incidunt itaque dicta vero?</p><button class="secondary add-to-booking radial-in">Add to Booking</button></div>
+			<div class="col-12 col-md-4 room-extra"><img src="http://booking.cwallermedia.co.uk/img/welcome.jpg" alt="Welcome Tray" class="extra-img"><p class="item-title">Welcome Tray</p> <p class="price">+ £45 per night</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex similique pariatur sapiente quisquam et nobis in ipsa magnam beatae at excepturi enim aperiam illo nihil, blanditiis incidunt itaque dicta vero?</p><button class="secondary add-to-booking radial-in">Add to Booking</button></div>
+			<div class="col-12 col-md-4 room-extra"><img src="http://booking.cwallermedia.co.uk/img/indulgence.jpg" alt="Indulgence Tray" class="extra-img"><p class="item-title">Indulgence Tray</p> <p class="price">+ £45 per night</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex similique pariatur sapiente quisquam et nobis in ipsa magnam beatae at excepturi enim aperiam illo nihil, blanditiis incidunt itaque dicta vero?</p><button class="secondary add-to-booking radial-in">Add to Booking</button></div>
+			<div class="col-12 col-md-4 room-extra"><img src="http://booking.cwallermedia.co.uk/img/celebration.jpg" alt="Celebration Tray" class="extra-img"><p class="item-title">Celebration Tray</p> <p class="price">+ £45 per night</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex similique pariatur sapiente quisquam et nobis in ipsa magnam beatae at excepturi enim aperiam illo nihil, blanditiis incidunt itaque dicta vero?</p><button class="secondary add-to-booking radial-in">Add to Booking</button></div>
+			<div class="col-12 col-md-4 room-extra"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12"><p>We can't guarantee special requests can be met, but we're happy to see what we can do. <a data-action="open-requests">Request special room requests.</a></p>
+		</div>
+	</div>
+	<div class="special-requirements">
+		<div class="section-header">
+			<div class="row">
+				<div class="col-12"><p>Special Requests</p></div>
+			</div>
+		</div>
+		<ul>
+			<li><input type="checkbox" name="" id="">Room with a view</li>
+			<li><input type="checkbox" name="" id="">Room near a lift</li>
+			<li><input type="checkbox" name="" id="">An Item</li>
+			<li><input type="checkbox" name="" id="">An Item</li>
+			<li><input type="checkbox" name="" id="">An Item</li>
+			<li><input type="checkbox" name="" id="">An Item</li>
+			<li><input type="checkbox" name="" id="">An Item</li>
+			<li><input type="checkbox" name="" id="">An Item</li>
+			<li><input type="checkbox" name="" id="">An Item</li>
+		</ul>
+	</div>
 </div>
