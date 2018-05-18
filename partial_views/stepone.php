@@ -14,6 +14,9 @@
 			</div>
 
 			<div class="row form-row">
+				<div class="col-12">
+					<p class="form-section-title">Lead Passenger</p>
+				</div>
 				<div class="col-2">
 					<label for="">Title</label>
 					<select name="" id="">
