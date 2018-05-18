@@ -9,8 +9,31 @@ p{
 .summary{
 	background-color: $light-grey;
 	padding: 2rem;
-	text-align: center;
 	margin: 0.8rem 0;
+	.summary-section {
+		padding: 0.3rem;
+		font-size: 14px;
+
+		span {
+			font-size: 16px;
+			font-weight: 500;
+			padding: 0.2rem 0;
+			border-bottom: 1px solid rgba(0,0,0,.1);
+		}
+		.list-title {
+			font-size: 16px;
+			margin: 0.5rem 0;
+		}
+
+		ul {
+			margin: 0.5rem 0;
+		}
+	}
+	.summary-title {
+		color: $grey;
+		font-weight: 500;
+		font-size: 21px;
+	}
 }
 
 .popular{

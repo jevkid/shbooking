@@ -22,41 +22,39 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-8">
-				<div data-step="1" data-next="travel" data-prev="party">
+				<div data-step="1" data-next="travel" data-prev="party" data-summary-id="party">
 					<?php include("partial_views/stepone.php"); ?>
 				</div>
-				<div class="hidden" data-step="2" data-next="travel" data-prev="travel">
+				<div class="hidden" data-step="2" data-next="travel" data-prev="travel" data-summary-id="joining">
 					<?php include("partial_views/steptwo.php"); ?>
 				</div>
-				<div class="hidden" data-step="3" data-next="travel" data-prev="travel">
+				<div class="hidden" data-step="3" data-next="travel" data-prev="travel" data-summary-id="seating">
 					<?php include("partial_views/coach.php"); ?>
 				</div>
-				<div class="hidden" data-step="4" data-next="accom" data-prev="travel">
+				<div class="hidden" data-step="4" data-next="accom" data-prev="travel" data-summary-id="air">
 					<?php include("partial_views/air.php"); ?>
 				</div>
-				<div class="hidden" data-step="5" data-next="details" data-prev="accom">
+				<div class="hidden" data-step="5" data-next="details" data-prev="accom" data-summary-id="accom">
 					<?php include("partial_views/stepthree.php"); ?>
 				</div>
 				<div class="hidden" data-step="6" data-next="extras" data-prev="details">
 					<?php include("partial_views/guestdetails.php"); ?>
 				</div>
-				<div class="hidden" data-step="7" data-next="confirm" data-prev="extras">
+				<div class="hidden" data-step="7" data-next="confirm" data-prev="extras" data-summary-id="extras">
 					<?php include("partial_views/extras.php"); ?>
 				</div>
 				<div class="hidden" data-step="8" data-prev="confirm">
 					<?php include("partial_views/payment.php"); ?>
 				</div>
-			</div>
-			<div class="col-12 col-md-4">
-				<div class="summary">Summary</div>
-			</div>
-			<div class="col-12 col-md-8">
 				<div class="pull-right">
 					<button type="button" data-current-step="1">Continue</button>
 				</div>
 				<div class="pull-left">
 					<a href="#" class="back-button hidden" data-previous-step>Back</a>
 				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<?php include("partial_views/summary.php"); ?>
 			</div>
 		</div>
 	</div>

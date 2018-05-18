@@ -5,13 +5,6 @@
         <p class="step-section-text">Selectum fulcrum ipsum coach seatings ipsum totum.</p>
 	</div>
 </div>
-<div class="row">
-	<div class="col-12">
-		<div class="panel">
-            <div class="panel-body">Flight to Las Vegas, Nevada (USA)</div>
-        </div>
-	</div>
-</div>
 <!--
 <div class="row">
 	<div class="col-8">

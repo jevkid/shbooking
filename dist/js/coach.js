@@ -157,6 +157,7 @@ function init(){
         coachId: "67", seatId: "101713", seatNumber: "9D", status: "Available", row: "9", seatInRow: "1"
       }
     ];
+    
     coaches.sort(function(a, b){
       return a.seatId - b.seatId;
     });
