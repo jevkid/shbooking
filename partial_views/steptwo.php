@@ -14,10 +14,10 @@
 	<div class="col-12">
 		<div class="multi-options">
 			
-			<div class="option active">
+			<div class="option">
 				<div class="row">
 					<div class="col-12 col-md-3">
-						<input type="radio" name="joiningoption" checked="checked"> <label>Joining Point</label>
+						<input type="radio" name="joiningoption"> <label>Joining Point</label>
 						<p class="price">Free</p>
 					</div>
 					<div class="col-12 col-md-9">
