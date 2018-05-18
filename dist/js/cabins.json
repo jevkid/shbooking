@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Captain's Cabin",
+      "desc": "Captain's Cabin. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ducimus, assumenda harum. Tempora odit, et, minus nesciunt doloribus fugiat a rem vero ex modi ipsa illum aut accusamus maiores in.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ducimus, assumenda harum. Tempora odit, et, minus nesciunt doloribus fugiat a rem vero ex modi ipsa illum aut accusamus maiores in.",
+      "image": "https://s3-eu-west-1.amazonaws.com/shearings-holidays-media/Images/GLOBAL/GERMANY/SML/G10317.jpg?sfvrsn=0"
+    },{
+      "id": 2,
+      "title": "Beethoven's Cabin",
+      "desc": "Beethoven's Cabin. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ducimus, assumenda harum. Tempora odit, et, minus nesciunt doloribus fugiat a rem vero ex modi ipsa illum aut accusamus maiores in.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ducimus, assumenda harum. Tempora odit, et, minus nesciunt doloribus fugiat a rem vero ex modi ipsa illum aut accusamus maiores in.",
+      "image": "https://s3-eu-west-1.amazonaws.com/shearings-holidays-media/Images/GLOBAL/GERMANY/SML/G10316.jpg?sfvrsn=0"
+    },{
+      "id": 3,
+      "title": "Chopin Cabin",
+      "desc": "Chopin Cabin. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ducimus, assumenda harum. Tempora odit, et, minus nesciunt doloribus fugiat a rem vero ex modi ipsa illum aut accusamus maiores in.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ducimus, assumenda harum. Tempora odit, et, minus nesciunt doloribus fugiat a rem vero ex modi ipsa illum aut accusamus maiores in.",
+      "image": "https://s3-eu-west-1.amazonaws.com/shearings-holidays-media/Images/GLOBAL/GERMANY/SML/G10318.jpg?sfvrsn=0"
+    }
+  ]
+}

@@ -43,13 +43,16 @@
 				<div class="hidden" data-step="5" data-next="details" data-prev="accom" data-summary-id="accom">
 					<?php include("partial_views/stepthree.php"); ?>
 				</div>
-				<div class="hidden" data-step="6" data-next="extras" data-prev="details">
+				<div class="hidden" data-step="6" data-next="details" data-prev="accom-part-2" data-summary-id="accom-part-2">
+					<?php include("partial_views/stepthree-part-2.php"); ?>
+				</div>
+				<div class="hidden" data-step="7" data-next="extras" data-prev="accom-part-2">
 					<?php include("partial_views/guestdetails.php"); ?>
 				</div>
-				<div class="hidden" data-step="7" data-next="confirm" data-prev="extras" data-summary-id="extras">
+				<div class="hidden" data-step="8" data-next="confirm" data-prev="extras" data-summary-id="extras">
 					<?php include("partial_views/extras.php"); ?>
 				</div>
-				<div class="hidden" data-step="8" data-prev="confirm">
+				<div class="hidden" data-step="9" data-prev="confirm">
 					<?php include("partial_views/payment.php"); ?>
 				</div>
 				<div class="pull-right">
@@ -83,5 +86,6 @@
 	<script src="dist/js/scripts.js"></script>
 	<script src="dist/js/flights.js"></script>
 	<script src="dist/js/coach.js"></script>
+	<script src="dist/js/room-cabin-info.js"></script>
 	</body>
 </html>
