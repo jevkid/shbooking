@@ -69,15 +69,7 @@
 		</div>
 	</div>
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center">
-				&copy; Shearings 1903 - <?= date(Y); ?>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<?php include("partial_views/footer.php"); ?>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
