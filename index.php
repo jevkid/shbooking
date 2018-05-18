@@ -12,7 +12,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<img src="https://d28wrjgfs2j02n.cloudfront.net/images/default-source/test-library/logo672568c0c1694119b999e3fd165ca7ad.jpg?sfvrsn=454c2974_1" width="176" style="padding: 1rem 0;" alt="">
+				<div class="pull-left">
+					<img src="https://d28wrjgfs2j02n.cloudfront.net/images/default-source/test-library/logo672568c0c1694119b999e3fd165ca7ad.jpg?sfvrsn=454c2974_1" width="176" style="padding: 1rem 0;" alt="">
+				</div>
+				<div class="pull-right text-right" style="padding: 1rem 0;">
+					<span style="color: #666666">Call us today on:</span>
+					<h3 style="color: #0068b9">01942 417545</h3>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -39,13 +39,34 @@ var navigationToggle = function(isBackButton) {
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
 };
 
+var groupSummaryToggle = function(groupParent) {
+	var groupCount = 0;
+	$(groupParent).each(function(){
+		groupCount++;
+		var title, forename, surname, paxId;
+		$('[data-group-id="' + groupCount + '"]').find('span').text('Group/Room: ' + groupCount);
+		$(this).find($('[data-pax]')).each(function(){
+			paxId = $(this).data('pax');
+			title = $(this).find('[data-pax-id="title"]').val();
+			forename = $(this).find('[data-pax-id="forename"]').val();
+			surname = $(this).find('[data-pax-id="surname"]').val();
+			$('[data-group-id="' + groupCount + '"]').find('[data-pax-num="' + paxId + '"]').text(title + ' ' + forename + ' ' + surname);
+		});
+	});
+};
+
 var summaryToggle = function(){
 	var section;
+	var groupParent;
 	$('[data-step]').each(function(){
 		if(!$(this).hasClass('hidden')){
 			section = $(this).prev().data('summaryId');
+			groupParent = $(this).prev().find('[data-parent="group"]');
 		}
 	});
+	if(section === 'party'){
+		groupSummaryToggle(groupParent);
+	}
 	$('#' + section).removeClass('hidden');
 };
 
