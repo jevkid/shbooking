@@ -3,17 +3,20 @@
     <hr />
     <div id="party" class="summary-section hidden">
         <!--for each group room, display room -->
-        <span>1st Group/Room:</span>
-        <!--for each pax, display first/last name -->
-        <ul>
-            <li>John Smith</li>
-            <li>Mary Smith</li>
-        </ul>
-        <span>2nd Group/Room:</span>
-        <ul>
-            <li>Bob Jones</li>
-            <li>Susan Jones</li>
-        </ul>
+        <div data-group-id="1">
+            <span></span>
+            <!--for each pax, display first/last name -->
+            <ul>
+                <li data-pax-num="1"></li>
+                <li data-pax-num="2"></li>
+            </ul>
+        </div>
+        <div data-group-id="2">
+            <span></span>
+            <ul>
+                <li data-pax-num="1"></li>
+            </ul>
+        </div>
     </div>
     <div id="joining" class="summary-section hidden">
         <!-- Joining point: display joining point address or home connect address/direct connect -->

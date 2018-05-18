@@ -5,7 +5,7 @@
 		<p>Please let us know the names of each member of your party.</p>
 	</div>
 	<div class="col-12">
-		<section data-id="groupone">
+		<section data-id="groupone" data-parent="group">
 			<div class="section-header">
 				<div class="row">
 					<div class="col-6">1st Group / Room</div>
@@ -13,13 +13,13 @@
 				</div>
 			</div>
 
-			<div class="row form-row">
+			<div class="row form-row" data-pax="1">
 				<div class="col-12">
 					<p class="form-section-title">Lead Passenger</p>
 				</div>
 				<div class="col-2">
 					<label for="">Title</label>
-					<select name="" id="">
+					<select name="" id="" data-pax-id="title">
 						<option value="">-</option>
 						<option value="Mr">Mr</option>
 						<option value="Mrs">Mrs</option>
@@ -31,18 +31,18 @@
 				</div>
 				<div class="col-5">
 					<label>Forename</label>
-					<input type="text">
+					<input type="text" data-pax-id="forename">
 				</div>
 				<div class="col-5">
 					<label>Surname</label>
-					<input type="text">
+					<input type="text" data-pax-id="surname">
 				</div>
 			</div>
 
-			<div class="row form-row">
+			<div class="row form-row" data-pax="2">
 				<div class="col-2">
 					<label for="">Title</label>
-					<select name="" id="">
+					<select name="" id="" data-pax-id="title">
 						<option value="">-</option>
 						<option value="Mr">Mr</option>
 						<option value="Mrs">Mrs</option>
@@ -54,11 +54,11 @@
 				</div>
 				<div class="col-5">
 					<label>Forename</label>
-					<input type="text">
+					<input type="text" data-pax-id="forename">
 				</div>
 				<div class="col-5">
 					<label>Surname</label>
-					<input type="text">
+					<input type="text" data-pax-id="surname">
 				</div>
 			</div>
 
@@ -66,18 +66,18 @@
 	</div>
 
 	<div class="col-12">
-		<section data-id="grouptwo">
+		<section data-id="grouptwo" data-parent="group">
 			<div class="section-header">
 				<div class="row">
 					<div class="col-6">2nd Group / Room</div>
-					<div class="col-6 text-right">2 Adults</div>
+					<div class="col-6 text-right">1 Adult</div>
 				</div>
 			</div>
 
-			<div class="row form-row">
+			<div class="row form-row" data-pax="1">
 				<div class="col-2">
 					<label for="">Title</label>
-					<select name="" id="">
+					<select name="" id="" data-pax-id="title">
 						<option value="">-</option>
 						<option value="Mr">Mr</option>
 						<option value="Mrs">Mrs</option>
@@ -89,14 +89,13 @@
 				</div>
 				<div class="col-5">
 					<label>Forename</label>
-					<input type="text">
+					<input type="text" data-pax-id="forename">
 				</div>
 				<div class="col-5">
 					<label>Surname</label>
-					<input type="text">
+					<input type="text" data-pax-id="surname">
 				</div>
 			</div>
-
 		</section>
 	</div>
 </div>
