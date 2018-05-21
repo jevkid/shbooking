@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<?php include("stylesheets.php"); ?>
-		<title>Booking Engine | Shearings</title>
+		<title>Booking Reference: H70018 | Shearings</title>
 	</head>
 	<body>
 		<header>
@@ -29,6 +29,7 @@
                 </div>
             </div>
 		</div>
+		<div class="gradient"></div>
 
 		<div class="container">
 			<div class="row">
@@ -36,7 +37,10 @@
 					<div class="booking-summary">
 						<div class="row">
 							<div class="col-12">
-								<h2 class="holiday-title">The Delights of Wigan</h2><br>
+								<p class="section-header">Your Holiday</p>
+								<p class="subtitle holiday-title">The Spectacular Delights of Wigan</p>
+								<p><strong>Tour Code:</strong> BNGTYEW</p>
+								<br>
 							</div>
 						</div>
 						<div class="row">
@@ -65,6 +69,7 @@
 						</div>
 						<div class="row">
 							<div class="col-12">
+								<p>All guests are joining the holiday via our tour connect option from the local joining point of Wigan Bus Station</p>
 								<table style="width: 100%" class="table">
 									<thead class="thead-light">
 										<tr>
@@ -105,11 +110,9 @@
 						</div>
 						<div class="row">
 							<div class="col-12">
-								<br>
 								<p class="section-header">Contact Details</p>
 							</div>
 							<div class="col-12 col-md-6">
-							<br>
 								Waterside House,<br>
 								Wigan Pier Business Park,<br>
 								Waterside Drive,<br>
@@ -117,7 +120,6 @@
 								WN3 5AZ
 							</div>
 							<div class="col-12 col-md-6">
-							<br>
 								<strong>Email: </strong>chris.waller@shearings.com<br>
 								<strong>Phone: </strong>01942 823457
 							</div>
@@ -126,7 +128,6 @@
 							<div class="col-12">
 								<br>
 								<p class="section-header">Travel Insurance</p>
-								<br>
 								<p>You have indicated that you have your own travel insurance</p>
 							</div>
 						</div>
@@ -157,7 +158,7 @@
 				</div>
 				<div class="col-12 col-md-3">
 					<div class="booking-summary">
-						<a class="btn secondary">Print Confirmation</a>
+						<a class="btn secondary" href="javascript:window.print()">Print Confirmation</a>
 						<br><br>
 						<a class="btn secondary">Back to Home</a>
 					</div>
