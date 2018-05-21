@@ -1,0 +1,19 @@
+@media print { 
+    .success-box{
+        display: none;
+    }
+
+    .confirmation-page{
+        .col-12.col-md-9{
+            flex: 100%;
+            max-width: 100%;
+        }
+        .sidebar{
+            display: none;
+        }
+    }
+
+    footer{
+        display: none;
+    }
+}

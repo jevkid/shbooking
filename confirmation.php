@@ -31,7 +31,7 @@
 		</div>
 		<div class="gradient"></div>
 
-		<div class="container">
+		<div class="container confirmation-page">
 			<div class="row">
 				<div class="col-12 col-md-9">
 					<div class="booking-summary">
@@ -54,7 +54,7 @@
 							</div>
 							<div class="col-12 col-md-3">
 								<p><strong>Holiday Duration:</strong></p>
-								<p>4</p>
+								<p>4 Days</p>
 							</div>
 							<div class="col-12 col-md-4">
 								<p><strong>Booking Reference Number:</strong></p>
@@ -156,7 +156,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-3">
+				<div class="col-12 col-md-3 sidebar">
 					<div class="booking-summary">
 						<a class="btn secondary" href="javascript:window.print()">Print Confirmation</a>
 						<br><br>
