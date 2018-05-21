@@ -1,0 +1,18 @@
+.flightDetails {
+    .flightLeg {
+        border-bottom: 1px solid $border-grey;
+        padding: 1rem 0;
+        .direction {
+            font-weight: 500;
+            font-size: 18px;
+            padding: 0.8rem 0;
+        }
+        .airport {
+            font-weight: 500;
+        }
+        .flightTime {
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
