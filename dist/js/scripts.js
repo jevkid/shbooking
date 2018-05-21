@@ -2,6 +2,11 @@ $(document).ready(function() {
   $('select').niceSelect();
 });
 
+$('input').iCheck({
+    checkboxClass: 'icheckbox_flat-blue',
+    radioClass: 'iradio_flat-blue'
+});
+
 var navigationToggle = function(isBackButton) {
 	var currentStep, navText, step;
 	/* Find each partial and see if it is hidden
@@ -103,7 +108,7 @@ $('html').on('click', '[data-previous-step]', function(e) {
 });
 
 $(".option").on("click", function(){
-	$(this).find("input").prop("checked", true);
+	$(this).find("input").iCheck('check');
 	$(".option").removeClass("active");
 	$(this).addClass("active");
 });
