@@ -1,14 +1,11 @@
-// $.getJSON('dist/js/cabins.json', function (data) {
-// 	console.log(data.items[0]);
-// });
-
-
 var active = $(".multi-options .option").find("input[type=radio]:checked").data("id");
 
 $.getJSON('dist/js/cabins.json', function (data) {
-    $(".accomm-desc .room-title").text(data.items[active].title);
-    $(".accomm-desc .room-text").html(data.items[active].desc);
-    $(".accomm-img img").attr("src",data.items[active].image);
+    if(data.items[active]){
+        $(".accomm-desc .room-title").text(data.items[active].title);
+        $(".accomm-desc .room-text").html(data.items[active].desc);
+        $(".accomm-img img").attr("src",data.items[active].image);
+    }
 });
 
 $(".multi-options .option").on("click", function(){
