@@ -30,31 +30,31 @@
 		<div class="row">
 			<div class="col-12 col-md-8">
 				<div data-step="1" data-next="travel" data-prev="party" data-summary-id="party">
-					<?php include("partial_views/stepone.php"); ?>
+					<?php include("partial_views/yourParty-1.php"); ?>
 				</div>
 				<div class="hidden" data-step="2" data-next="travel" data-prev="travel" data-summary-id="joining">
-					<?php include("partial_views/steptwo.php"); ?>
+					<?php include("partial_views/joiningPoint-2.php"); ?>
 				</div>
 				<div class="hidden" data-step="3" data-next="travel" data-prev="travel" data-summary-id="seating">
-					<?php include("partial_views/coach.php"); ?>
+					<?php include("partial_views/coach-3.php"); ?>
 				</div>
 				<div class="hidden" data-step="4" data-next="accom" data-prev="travel" data-summary-id="air">
-					<?php include("partial_views/air.php"); ?>
+					<?php include("partial_views/air-4.php"); ?>
 				</div>
 				<div class="hidden" data-step="5" data-next="details" data-prev="accom" data-summary-id="accom">
-					<?php include("partial_views/stepthree.php"); ?>
+					<?php include("partial_views/accommodation-5.php"); ?>
 				</div>
 				<div class="hidden" data-step="6" data-next="details" data-prev="accom-part-2" data-summary-id="accom-part-2">
-					<?php include("partial_views/stepthree-part-2.php"); ?>
+					<?php include("partial_views/accommodation-6.php"); ?>
 				</div>
 				<div class="hidden" data-step="7" data-next="extras" data-prev="accom-part-2">
-					<?php include("partial_views/guestdetails.php"); ?>
+					<?php include("partial_views/guestDetails-7.php"); ?>
 				</div>
 				<div class="hidden" data-step="8" data-next="confirm" data-prev="extras" data-summary-id="extras">
-					<?php include("partial_views/extras.php"); ?>
+					<?php include("partial_views/extras-8.php"); ?>
 				</div>
 				<div class="hidden" data-step="9" data-prev="confirm">
-					<?php include("partial_views/payment.php"); ?>
+					<?php include("partial_views/payment-9.php"); ?>
 				</div>
 				<div class="pull-right">
 					<button type="button" data-current-step="1">Continue</button>

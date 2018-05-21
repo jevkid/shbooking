@@ -55,6 +55,22 @@ var groupSummaryToggle = function(groupParent) {
 	});
 };
 
+var joiningToggle = function(){
+	// TODO
+};
+
+var coachToggle = function() {
+	// TODO
+};
+
+var flightToggle = function() {
+	// TODO
+};
+
+var accomToggle = function() {
+	// TODO
+};
+
 var summaryToggle = function(){
 	var section;
 	var groupParent;

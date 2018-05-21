@@ -17,7 +17,7 @@
 			<div class="option">
 				<div class="row">
 					<div class="col-12 col-md-3">
-						<input type="radio" name="joiningoption"> <label>Joining Point</label>
+						<input type="radio" name="joiningoption" value="joining-point"> <label>Joining Point</label>
 						<p class="price">Free</p>
 					</div>
 					<div class="col-12 col-md-9">
@@ -29,7 +29,7 @@
 			<div class="option">
 				<div class="row">
 					<div class="col-12 col-md-3">
-						<input type="radio" name="joiningoption"> <label>Home Connect</label>
+						<input type="radio" name="joiningoption" value="home-connect"> <label>Home Connect</label>
 						<p class="price">+ £20 per guest</p>
 					</div>
 					<div class="col-12 col-md-9">
@@ -42,7 +42,7 @@
 			<div class="option">
 				<div class="row">
 					<div class="col-12 col-md-3">
-						<input type="radio" name="joiningoption"> <label>Direct Connect</label>
+						<input type="radio" name="joiningoption" value="direct-connect"> <label>Direct Connect</label>
 						<p class="price">Free</p>
 					</div>
 					<div class="col-12 col-md-9">

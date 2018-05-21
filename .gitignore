@@ -1,2 +1,3 @@
 .sass-cache/
 dist/css
+.DS_STORE
