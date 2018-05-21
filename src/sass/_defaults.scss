@@ -1,3 +1,9 @@
+html{
+	-webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.004);
+}
+
 body{
 	font-family: 'Roboto', sans-serif;
 }
@@ -10,10 +16,42 @@ a{
 	color: $blue !important;
 	text-decoration: underline !important;
 	cursor: pointer;
+
+	&.btn{
+		background-color: $green;
+		border-radius: $border-radius;
+		padding: 0.5rem 2rem;
+		border: none;
+		color: white !important;
+		text-decoration: none !important;
+		font-weight: 400;
+		transition: $transition-default;
+		outline:  none !important;
+	
+		&:hover{
+			cursor: pointer;
+			background-color: darken($green, 2%);
+		}
+	
+		&.secondary{
+			background-color: transparent;
+			border: 2px solid $blue;
+			color: $blue !important;
+		}
+	
+		&.active{
+			background-color: $green;
+			color: white;
+		}
+	}
 }
 
 a:link{
 	color: $blue;
+}
+
+h1{
+	letter-spacing: -0.4px;
 }
 
 .summary{
