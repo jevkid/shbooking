@@ -2,7 +2,6 @@
 	<div class="col-12">
 		<p class="step-title">Step 2</p>
 		<p class="step-section-title">Flights</p>
-        <p class="step-section-text">Selectum fulcrum ipsum coach seatings ipsum totum.</p>
 	</div>
 </div>
 <!--
@@ -57,129 +56,71 @@
                 </select>
                 <br><br>
                 <div id="1" class="flightDetails hidden">
-                    <table width="100%">
-                        <tbody>
-                            <tr class="table-row-underline">
-                                <th>Flight number</th>
-                                <th>Description</th>
-                                <th>Outbound / Inbound</th>
-                                <th>Departure</th>
-                                <th>Arrival</th>
-                            </tr>
-                            <tr class="table-row-color-alt">
-                                <td>TCX2718   ODR Economy</td>
-                                <td>MAN-LAS    THOMAS COOK</td>
-                                <td>Outbound</td>
-                                <td>13 May 2019 09:10</td>
-                                <td>13 May 2019 12:05</td>
-                            </tr>
-                            <tr class="table-row-color-alt">
-                                <td>TCX2719   ODR Economy</td>
-                                <td>LAS-MAN    THOMAS COOK</td>
-                                <td>Inbound</td>
-                                <td>27 May 2019 07:55</td>
-                                <td>28 May 2019 13:55</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="flightLeg">
+                        <div class="direction">Outbound</div>
+                        <div>TCX2718 ODR Economy</div>
+                        <div class="airport">MAN-LAS THOMAS COOK</div>
+                        <div class="flightTime">13 May 2019 09:10 - 13 May 2019 12:05</div>
+                    </div>
+                    <div class="flightLeg">
+                        <div class="direction">Inbound</div>
+                        <div>TCX2719 ODR Economy</div>
+                        <div class="airport">LAS-MAN THOMAS COOK</div>
+                        <div class="flightTime">27 May 2019 07:55 - 28 May 2019 13:55</div>
+                    </div>
                     <input id="flightlink-1" value="[&quot;25863-FLG00007315502&quot;,&quot;25864-FLG000073283516&quot;]" type="hidden">
                 </div>
                 <div id="2" class="flightDetails hidden">
-                    <table width="100%">
-                        <tbody>
-                            <tr class="table-row-underline">
-                                <th>Flight number</th>
-                                <th>Description</th>
-                                <th>Outbound / Inbound</th>
-                                <th>Departure</th>
-                                <th>Arrival</th>
-                            </tr>
-                            <tr class="table-row-color-alt">
-                                <td>VS043   ODR Economy</td>
-                                <td>LGW-LAS    Virgin Atlantic</td>
-                                <td>Outbound</td>
-                                <td>13 May 2019 10:35</td>
-                                <td>13 May 2019 13:20</td>
-                            </tr>
-                            <tr class="table-row-color-alt">
-                                <td>VS044   ODR Economy</td>
-                                <td>LAS-LGW    Virgin Atlantic</td>
-                                <td>Inbound</td>
-                                <td>27 May 2019 09:25</td>
-                                <td>28 May 2019 15:35</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="flightLeg">
+                        <div class="direction">Outbound</div>
+                        <div>VS043 ODR Economy</div>
+                        <div class="airport">LGW-LAS Virgin Atlantic</div>
+                        <div class="flightTime">13 May 2019 10:35 - 13 May 2019 13:20</div>
+                    </div>
+                    <div class="flightLeg">
+                        <div class="direction">Inbound</div>
+                        <div>VS044 ODR Economy</div>
+                        <div class="airport">LAS-LGW Virgin Atlantic</div>
+                        <div class="flightTime">27 May 2019 09:25 - 28 May 2019 15:35</div>
+                    </div>
                     <input id="flightlink-2" value="[&quot;25865-FLG00007336352&quot;,&quot;25866-FLG000073493516&quot;]" type="hidden">
                 </div>
                 <div id="3" class="flightDetails hidden">
-                    <table width="100%">
-                        <tbody>
-                            <tr class="table-row-underline">
-                                <th>Flight number</th>
-                                <th>Description</th>
-                                <th>Outbound / Inbound</th>
-                                <th>Departure</th>
-                                <th>Arrival</th>
-                            </tr>
-                            <tr class="table-row-color-alt">
-                                <td>BA1443   ODR Economy</td>
-                                <td>EDI-LHR    British Airways</td>
-                                <td>Outbound</td>
-                                <td>13 May 2019 11:55</td>
-                                <td>13 May 2019 13:25</td>
-                            </tr>
-                            <tr class="table-row-color-alt">
-                                <td>BA275   ODR Economy</td>
-                                <td>LHR-LAS    British Airways</td>
-                                <td>Outbound</td>
-                                <td>13 May 2019 16:40</td>
-                                <td>13 May 2019 19:20</td>
-                            </tr>
-                            <tr class="table-row-color-alt">
-                                <td>BA2276   ODR Economy</td>
-                                <td>LAS-LHR    British Airways</td>
-                                <td>Inbound</td>
-                                <td>27 May 2019 10:35</td>
-                                <td>28 May 2019 16:35</td>
-                            </tr>
-                            <tr class="table-row-color-alt">
-                                <td>BA2940   ODR Economy</td>
-                                <td>LHR-EDI    British Airways</td>
-                                <td>Inbound</td>
-                                <td>27 May 2019 13:20</td>
-                                <td>27 May 2019 11:50</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="flightLeg">
+                        <div class="direction">Outbound</div>
+                        <div>BA1443 ODR Economy</div>
+                        <div class="airport">EDI-LHR British Airways</div>
+                        <div class="flightTime">13 May 2019 11:55 - 13 May 2019 13:25</div>
+
+                        <div>BA275 ODR Economy</div>
+                        <div class="airport">LHR-LAS British Airways</div>
+                        <div class="flightTime">13 May 2019 16:40 - 13 May 2019 19:20</div>
+                    </div>
+                    <div class="flightLeg">
+                        <div class="direction">Inbound</div>
+                        <div>BA2276 ODR Economy</div>
+                        <div class="airport">LAS-LHR British Airways</div>
+                        <div class="flightTime">27 May 2019 10:35 - 28 May 2019 16:35</div>
+                        
+                        <div>BA2940 ODR Economy</div>
+                        <div class="airport">LHR-EDI British Airways</div>
+                        <div class="flightTime">27 May 2019 13:20 - 27 May 2019 11:50</div>
+                    </div>
                     <input id="flightlink-3" value="[&quot;25869-FLG00007377152&quot;,&quot;25870-FLG000073810002&quot;,&quot;25871-FLG000073999516&quot;,&quot;25872-FLG000074071016&quot;]" type="hidden">
                 </div>
                 <div id="4" class="flightDetails hidden">
-                    <table width="100%">
-                        <tbody>
-                            <tr class="table-row-underline">
-                                <th>Flight number</th>
-                                <th>Description</th>
-                                <th>Outbound / Inbound</th>
-                                <th>Departure</th>
-                                <th>Arrival</th>
-                            </tr>
-                            <tr class="table-row-color-alt">
-                                <td>BA275   ODR Economy</td>
-                                <td>LHR-LAS    British Airways</td>
-                                <td>Outbound</td>
-                                <td>13 May 2019 16:40</td>
-                                <td>13 May 2019 19:20</td>
-                            </tr>
-                            <tr class="table-row-color-alt">
-                                <td>BA274   (None)</td>
-                                <td>LAS-LHR    British Airways</td>
-                                <td>Inbound</td>
-                                <td>27 May 2019 15:30</td>
-                                <td>28 May 2019 21:30</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="flightLeg">
+                        <div class="direction">Outbound</div>
+                        <div>BA275 ODR Economy</div>
+                        <div class="airport">LHR-LAS British Airways</div>
+                        <div class="flightTime">13 May 2019 16:40 - 13 May 2019 19:20</div>
+                    </div>
+                    <div class="flightLeg">
+                        <div class="direction">Inbound</div>
+                        <div>BA274 (None)</div>
+                        <div class="airport">LAS-LHR British Airways</div>
+                        <div class="flightTime">27 May 2019 15:30 - 28 May 2019 21:30</div>
+                    </div>
                     <input id="flightlink-4" value="[&quot;25867-FLG000073510002&quot;,&quot;25868-FLG0000736129016&quot;]" type="hidden">
                 </div>
                 <input id="selectedFlights" name="selectedFlights" type="hidden" value="[&quot;25863-FLG00007315502&quot;,&quot;25864-FLG000073283516&quot;]">

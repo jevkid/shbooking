@@ -45,6 +45,7 @@
                 <li class="map">D</li>
             </ul>
         </div>
+        <!-- if there are multiple coaches, display each -->
         <div class="row">
             <div class="col-6">
                 <div class="vantage-info">
