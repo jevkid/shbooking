@@ -198,6 +198,10 @@ function init(){
               coach: this.getAttribute('data-coach-id'), 
               seat: this.getAttribute('data-seat-id')
             });
+            var input = document.createElement('input');
+            input.setAttribute('type', 'hidden');
+            input.setAttribute('value', (this.getAttribute('data-coach-id') + ',' + this.getAttribute('data-seat-id')));
+
             var seat = document.createElement('li');
             var summary = document.createElement('li');
             seat.setAttribute('class', 'seat');
@@ -208,6 +212,7 @@ function init(){
             seat.appendChild(text);
             summary.appendChild(summaryText);
             document.getElementById('customerMap').appendChild(seat);
+            document.getElementById('customerMap').appendChild(input);
             document.getElementById('seatSummary').appendChild(summary);
 
             this.removeAttribute("class", "available");
