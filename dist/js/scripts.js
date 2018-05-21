@@ -80,9 +80,9 @@ var coachToggle = function() {
 	// TODO
 };
 
-var flightToggle = function() {
-	// TODO
-};
+// var flightToggle = function() {
+// 	// TODO
+// };
 
 var accomToggle = function() {
 	// TODO
@@ -96,6 +96,19 @@ var validateFields = function(parent){
 			isValid = false;
 		}
 	});
+	parent.find('select').each(function(){
+		var selected = $(this).find(':selected').val();
+		if(selected === '' || !selected || selected == 0){
+			isValid = false;
+		}
+	});
+
+	if(parent.find($('#customerMap')).length){
+		var paxCount = $('[data-pax-count]').data('paxCount');
+		if($('#customerMap').find('input').length < paxCount){
+			isValid = false;
+		}
+	}
 
 	return isValid;
 };
@@ -105,6 +118,9 @@ var summaryToggle = function(section, parent){
 		groupSummaryToggle(parent);
 	}
 	if(section === 'joining'){
+		joiningToggle(parent);
+	}
+	if(section === 'air'){
 		joiningToggle(parent);
 	}
 	$('#' + section).removeClass('hidden');
@@ -127,12 +143,13 @@ $('html').on('click', '[data-current-step]', function() {
 	});
 	var isValid = validateFields(form);
 	if(isValid){
+		$('[data-alert]').addClass('hidden');
 		$('[data-previous-step]').removeClass('hidden');
 		navigationToggle(false);
 		summaryToggle(section, parent);
 		updatePrice();
 	} else {
-		// TODO
+		$('[data-alert]').removeClass('hidden');
 	}
 });
 

@@ -31,14 +31,15 @@
     <div id="air" class="summary-section hidden">
         <span>Your Flight</span>
         <!-- for each flight show outbound/inbound, each outbound/inbound show leg -->
-        <div class="list-title">Outbound:</div>
-        <ul>
-            <li>LGW-LAS Virgin Atlantic VS043 13 May 2019 10:35</li>
+        <!-- We are only being given the outbound place in the option selection currently -->
+        <!--<div class="list-title">Outbound:</div>-->
+        <ul id="flight-summary">
+            <li></li>
         </ul>
-        <div class="list-title">Return:</div>
+        <!--<div class="list-title">Return:</div>
         <ul>
             <li>LAS-LGW Virgin Atlantic VS044 27 May 2019 09:25</li>
-        </ul>
+        </ul>-->
     </div>
     <div id="accom" class="summary-section hidden">
         <span>Your Accommodation</span>
