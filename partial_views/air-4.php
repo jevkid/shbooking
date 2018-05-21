@@ -47,7 +47,7 @@
                 <div class="section">
                     <span class="section-title">Flights from London Heathrow (United Kingdom) to Las Vegas, Nevada (USA)<span>
                 </div>
-                <select id="outboundFlight" name="outboundFlight">
+                <select id="outboundFlight" name="outboundFlight" data-validate="required">
                     <option value="0">Select Flight</option>
                     <option value="25863" data-flightlink="1">13/05/2019 09:10:00 - MAN-LAS    THOMAS COOK</option>
                     <option value="25865" data-flightlink="2">13/05/2019 10:35:00 - LGW-LAS    Virgin Atlantic</option>

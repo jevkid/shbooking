@@ -92,13 +92,13 @@ var validateFields = function(parent){
 	var isValid = true;
 	parent.find('input').each(function(){
 		var val = $(this).val();
-		if(val === '' || !val || val === null) {
+		if((val === '' || !val || val === null) && $(this).data('validate') === 'required') {
 			isValid = false;
 		}
 	});
 	parent.find('select').each(function(){
 		var selected = $(this).find(':selected').val();
-		if(selected === '' || !selected || selected == 0){
+		if((selected === '' || !selected || selected == 0) && $(this).data('validate') === 'required'){
 			isValid = false;
 		}
 	});

@@ -19,7 +19,7 @@
 				</div>
 				<div class="col-2">
 					<label for="">Title</label>
-					<select name="" id="" data-pax-id="title">
+					<select name="" id="" data-pax-id="title" data-validate="required">
 						<option value="">-</option>
 						<option value="Mr" selected>Mr</option>
 						<option value="Mrs">Mrs</option>
@@ -31,18 +31,18 @@
 				</div>
 				<div class="col-5">
 					<label>Forename</label>
-					<input type="text" data-pax-id="forename" value="John">
+					<input type="text" data-pax-id="forename" value="John" data-validate="required">
 				</div>
 				<div class="col-5">
 					<label>Surname</label>
-					<input type="text" data-pax-id="surname" value="Smith">
+					<input type="text" data-pax-id="surname" value="Smith" data-validate="required">
 				</div>
 			</div>
 
 			<div class="row form-row" data-pax="2">
 				<div class="col-2">
 					<label for="">Title</label>
-					<select name="" id="" data-pax-id="title">
+					<select name="" id="" data-pax-id="title" data-validate="required">
 						<option value="">-</option>
 						<option value="Mr">Mr</option>
 						<option value="Mrs" selected>Mrs</option>
@@ -54,11 +54,11 @@
 				</div>
 				<div class="col-5">
 					<label>Forename</label>
-					<input type="text" data-pax-id="forename" value="Mary">
+					<input type="text" data-pax-id="forename" value="Mary" data-validate="required">
 				</div>
 				<div class="col-5">
 					<label>Surname</label>
-					<input type="text" data-pax-id="surname" value="Smith">
+					<input type="text" data-pax-id="surname" value="Smith" data-validate="required">
 				</div>
 			</div>
 
@@ -77,7 +77,7 @@
 			<div class="row form-row" data-pax="1">
 				<div class="col-2">
 					<label for="">Title</label>
-					<select name="" id="" data-pax-id="title">
+					<select name="" id="" data-pax-id="title" data-validate="required">
 						<option value="">-</option>
 						<option value="Mr" selected>Mr</option>
 						<option value="Mrs">Mrs</option>
@@ -89,11 +89,11 @@
 				</div>
 				<div class="col-5">
 					<label>Forename</label>
-					<input type="text" data-pax-id="forename" value="Bob">
+					<input type="text" data-pax-id="forename" value="Bob" data-validate="required">
 				</div>
 				<div class="col-5">
 					<label>Surname</label>
-					<input type="text" data-pax-id="surname" value="Jones">
+					<input type="text" data-pax-id="surname" value="Jones" data-validate="required">
 				</div>
 			</div>
 		</section>
