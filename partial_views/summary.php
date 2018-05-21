@@ -20,18 +20,13 @@
     </div>
     <div id="joining" class="summary-section hidden">
         <!-- Joining point: display joining point address or home connect address/direct connect -->
-        <span>Joining Point: </span>
-        <span id="join-type">Home Connect</span>
+        <span>Travel: </span>
+        <span id="join-type"></span>
     </div>
     <div id="seating" class="summary-section hidden">
         <span>Your Seats</span>
         <!-- if more than one coach, for each coach, display each pax and seat selection -->
-        <ul>
-            <li>John Smith: Seat 1A</li>
-            <li>Mary Smith: Seat 2A</li>
-            <li>Bob Jones: Seat 5D</li>
-            <li>Susan Jones: Seat 5C</li>
-        </ul>
+        <ul id="seatSummary"></ul>
     </div>
     <div id="air" class="summary-section hidden">
         <span>Your Flight</span>

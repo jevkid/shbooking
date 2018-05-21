@@ -21,7 +21,7 @@
 					<label for="">Title</label>
 					<select name="" id="" data-pax-id="title">
 						<option value="">-</option>
-						<option value="Mr">Mr</option>
+						<option value="Mr" selected>Mr</option>
 						<option value="Mrs">Mrs</option>
 						<option value="Miss">Miss</option>
 						<option value="Sir">Sir</option>
@@ -31,11 +31,11 @@
 				</div>
 				<div class="col-5">
 					<label>Forename</label>
-					<input type="text" data-pax-id="forename">
+					<input type="text" data-pax-id="forename" value="John">
 				</div>
 				<div class="col-5">
 					<label>Surname</label>
-					<input type="text" data-pax-id="surname">
+					<input type="text" data-pax-id="surname" value="Smith">
 				</div>
 			</div>
 
@@ -45,7 +45,7 @@
 					<select name="" id="" data-pax-id="title">
 						<option value="">-</option>
 						<option value="Mr">Mr</option>
-						<option value="Mrs">Mrs</option>
+						<option value="Mrs" selected>Mrs</option>
 						<option value="Miss">Miss</option>
 						<option value="Sir">Sir</option>
 						<option value="Dr">Dr</option>
@@ -54,11 +54,11 @@
 				</div>
 				<div class="col-5">
 					<label>Forename</label>
-					<input type="text" data-pax-id="forename">
+					<input type="text" data-pax-id="forename" value="Mary">
 				</div>
 				<div class="col-5">
 					<label>Surname</label>
-					<input type="text" data-pax-id="surname">
+					<input type="text" data-pax-id="surname" value="Smith">
 				</div>
 			</div>
 
@@ -79,7 +79,7 @@
 					<label for="">Title</label>
 					<select name="" id="" data-pax-id="title">
 						<option value="">-</option>
-						<option value="Mr">Mr</option>
+						<option value="Mr" selected>Mr</option>
 						<option value="Mrs">Mrs</option>
 						<option value="Miss">Miss</option>
 						<option value="Sir">Sir</option>
@@ -89,11 +89,11 @@
 				</div>
 				<div class="col-5">
 					<label>Forename</label>
-					<input type="text" data-pax-id="forename">
+					<input type="text" data-pax-id="forename" value="Bob">
 				</div>
 				<div class="col-5">
 					<label>Surname</label>
-					<input type="text" data-pax-id="surname">
+					<input type="text" data-pax-id="surname" value="Jones">
 				</div>
 			</div>
 		</section>

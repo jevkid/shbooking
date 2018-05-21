@@ -12,12 +12,12 @@
 </div>
 <div class="row">
 	<div class="col-12">
-		<div class="multi-options">
+		<div class="multi-options" data-parent="group">
 			
 			<div class="option">
 				<div class="row">
 					<div class="col-12 col-md-3">
-						<input type="radio" name="joiningoption" value="joining-point"> <label>Joining Point</label>
+						<input type="radio" data-radio-option="Joining Point" name="joiningoption" value="joining-point" checked> <label>Joining Point</label>
 						<p class="price">Free</p>
 					</div>
 					<div class="col-12 col-md-9">
@@ -29,7 +29,7 @@
 			<div class="option">
 				<div class="row">
 					<div class="col-12 col-md-3">
-						<input type="radio" name="joiningoption" value="home-connect"> <label>Home Connect</label>
+						<input type="radio" data-radio-option="Home Connect" name="joiningoption" value="home-connect"> <label>Home Connect</label>
 						<p class="price">+ £20 per guest</p>
 					</div>
 					<div class="col-12 col-md-9">
@@ -42,7 +42,7 @@
 			<div class="option">
 				<div class="row">
 					<div class="col-12 col-md-3">
-						<input type="radio" name="joiningoption" value="direct-connect"> <label>Direct Connect</label>
+						<input type="radio" data-radio-option="Direct Connect" name="joiningoption" value="direct-connect"> <label>Direct Connect</label>
 						<p class="price">Free</p>
 					</div>
 					<div class="col-12 col-md-9">

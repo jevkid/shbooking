@@ -46,6 +46,7 @@ var navigationToggle = function(isBackButton) {
 
 var groupSummaryToggle = function(groupParent) {
 	var groupCount = 0;
+	var group = [];
 	$(groupParent).each(function(){
 		groupCount++;
 		var title, forename, surname, paxId;
@@ -56,12 +57,23 @@ var groupSummaryToggle = function(groupParent) {
 			forename = $(this).find('[data-pax-id="forename"]').val();
 			surname = $(this).find('[data-pax-id="surname"]').val();
 			$('[data-group-id="' + groupCount + '"]').find('[data-pax-num="' + paxId + '"]').text(title + ' ' + forename + ' ' + surname);
+			group.push(forename + ' ' + surname);
 		});
 	});
+	$('[data-pax-count]').attr('data-coach-pax', group);
+	$('[data-pax-name]').text(group[0]);
 };
 
-var joiningToggle = function(){
-	// TODO
+var joiningToggle = function(groupParent){
+	var options = $('[data-radio-option]');
+	var checked;
+	options.each(function(){
+		if($(this).is(':checked')){
+			checked = $(this).data('radioOption');
+		}
+		$('#join-type').text(checked);
+	});
+	
 };
 
 var coachToggle = function() {
@@ -76,17 +88,24 @@ var accomToggle = function() {
 	// TODO
 };
 
-var summaryToggle = function(){
-	var section;
-	var groupParent;
-	$('[data-step]').each(function(){
-		if(!$(this).hasClass('hidden')){
-			section = $(this).prev().data('summaryId');
-			groupParent = $(this).prev().find('[data-parent="group"]');
+var validateFields = function(parent){
+	var isValid = true;
+	parent.find('input').each(function(){
+		var val = $(this).val();
+		if(val === '' || !val || val === null) {
+			isValid = false;
 		}
 	});
+
+	return isValid;
+};
+
+var summaryToggle = function(section, parent){
 	if(section === 'party'){
-		groupSummaryToggle(groupParent);
+		groupSummaryToggle(parent);
+	}
+	if(section === 'joining'){
+		joiningToggle(parent);
 	}
 	$('#' + section).removeClass('hidden');
 };
@@ -96,10 +115,25 @@ var updatePrice = function() {
 };
 
 $('html').on('click', '[data-current-step]', function() {
-	$('[data-previous-step]').removeClass('hidden');
-	navigationToggle();	
-	summaryToggle();
-	updatePrice();
+	var parent;
+	var form;
+	var section;
+	$('[data-step]').each(function(){
+		if(!$(this).hasClass('hidden')){
+			section = $(this).data('summaryId');
+			parent = $(this).find('[data-parent="group"]')
+			form = $(this);
+		}
+	});
+	var isValid = validateFields(form);
+	if(isValid){
+		$('[data-previous-step]').removeClass('hidden');
+		navigationToggle(false);
+		summaryToggle(section, parent);
+		updatePrice();
+	} else {
+		// TODO
+	}
 });
 
 $('html').on('click', '[data-previous-step]', function(e) {

@@ -6,6 +6,11 @@
     <div class="col-12">
         <p class="section-header">Select your seats to Amsterdam</p>               
     </div>
+    <div class="col-12">
+        <p>Select a seat for
+            <span data-pax-name></span>
+        </p>
+    </div>
     <div class="col-12 coaches pull-left">
         <div class="coachInfo">
             <div class="selected">
@@ -50,7 +55,7 @@
                 </div>
             </div>
             <div class="col-4 customer">
-                <div class="customerSelect hidden" data-pax=4>
+                <div class="customerSelect hidden" data-pax-count=3>
                     <h3>Your Seats</h3>
                     <ul class="customerList" id="customerMap"></ul>
                 </div>

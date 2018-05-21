@@ -162,11 +162,12 @@ function init(){
       return a.seatId - b.seatId;
     });
 
-    var numPax = document.querySelector('[data-pax]').getAttribute('data-pax');
+    var numPax = document.querySelector('[data-pax-count]').getAttribute('data-pax-count');
     var numSeats = coaches.length / 4;
   
     var count = 0;
     var selectedSeats = [];
+    var pax;
   
     for(var i = 1; i <= numSeats; i++){
       var li = document.createElement('li');
@@ -187,20 +188,28 @@ function init(){
         li.setAttribute("class", liClass);
         
         li.addEventListener('click', function(){
+          pax = document.querySelector('[data-coach-pax]').getAttribute('data-coach-pax');
+          pax = pax.split(',');
           count++;
-  
           if(count <= numPax) {
-            document.querySelector('[data-pax]').removeAttribute('class', 'hidden');
+            $('[data-pax-name]').text(pax[count]);
+            document.querySelector('[data-pax-count]').removeAttribute('class', 'hidden');
             selectedSeats.push({
               coach: this.getAttribute('data-coach-id'), 
               seat: this.getAttribute('data-seat-id')
             });
             var seat = document.createElement('li');
+            var summary = document.createElement('li');
             seat.setAttribute('class', 'seat');
-            var text = document.createTextNode('Passenger ' + count + ': ' + this.getAttribute('data-seat-num'));
+
+            var text = document.createTextNode(pax[count-1] + ': ' + this.getAttribute('data-seat-num'));
+            var summaryText = document.createTextNode(pax[count-1] + ': ' + this.getAttribute('data-seat-num'));
+            
             seat.appendChild(text);
+            summary.appendChild(summaryText);
             document.getElementById('customerMap').appendChild(seat);
-    
+            document.getElementById('seatSummary').appendChild(summary);
+
             this.removeAttribute("class", "available");
             this.setAttribute("class", "selected");
   
@@ -209,6 +218,9 @@ function init(){
              Add additional look for selected element on hover
              Click to remove element
             */
+          }
+          if(count >= numPax) {
+            $('[data-pax-name]').parents('p').addClass('hidden');
           }
         });
         if(coaches[key].seatNumber.indexOf('A') > -1) {
