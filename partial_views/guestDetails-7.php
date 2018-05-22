@@ -2,7 +2,7 @@
 	<div class="col-12">
 		<p class="step-title">Step 4</p>
 		<p class="step-section-title">Guest Details</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae imperdiet lectus. Nulla facilisi. Duis ac dolor et orci varius dignissim et nec dui. </p>
+        <p>We just need a bit more information about each of the guests who are travelling.</p>
         <p class="text-right"><span class="required">*</span> Indicates a required field</p>
 	</div>
 </div>

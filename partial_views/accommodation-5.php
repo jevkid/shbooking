@@ -6,7 +6,7 @@
 </div>
 <div class="row">
 	<div class="col-12">
-		<p class="section-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae tincidunt justo. Nam sed maximus leo. Donec facilisis, risus id euismod laoreet, tortor ante ornare turpis, vitae interdum ante nibh id ipsum. Aliquam in tellus tristique, porta orci eu, faucibus elit.</p>
+		<p class="section-intro">Select which room you would like to stay in throughout your holiday, whether that’s a standard room or an upgrade to something more luxurious. </p>
 	</div>
 </div>
 
@@ -40,7 +40,7 @@
 				<div class="option">
 					<div class="row">
 						<div class="col-12 col-md-3">
-							<input type="radio" name="group1-joiningoption" checked="checked" data-id="0" value="Captain's Cabin"> <label>Captain's Cabin</label>
+							<input type="radio" name="group1-roomoption" checked="checked" data-id="0" value="Captain's Cabin"> <label>Captain's Cabin</label>
 							<p class="price">+ £45 per night</p>
 						</div>
 						<div class="col-12 col-md-9">
@@ -58,7 +58,7 @@
 				<div class="option">
 					<div class="row">
 						<div class="col-12 col-md-3">
-							<input type="radio" name="group1-joiningoption" data-id="1" value="Beethoven's Cabin"> <label>Beethoven's Cabin</label>
+							<input type="radio" name="group1-roomoption" data-id="1" value="Beethoven's Cabin"> <label>Beethoven's Cabin</label>
 							<p class="price">+ £22 per night</p>
 						</div>
 						<div class="col-12 col-md-9">
@@ -76,7 +76,7 @@
 				<div class="option active">
 					<div class="row">
 						<div class="col-12 col-md-3">
-							<input type="radio" name="group1-joiningoption" data-id="2" checked="checked" value="Chopin Cabin"> <label>Chopin Cabin</label>
+							<input type="radio" name="group1-roomoption" data-id="2" checked="checked" value="Chopin Cabin"> <label>Chopin Cabin</label>
 							<p class="price">Included</p>
 						</div>
 						<div class="col-12 col-md-9">
@@ -99,7 +99,7 @@
 		<div class="col-12">
 			<div class="hidden-section-header">
 				<div class="row">
-					<div class="col-9"><p>Extras for MS Serenade 2</p></div>
+					<div class="col-9"><p>Would you like to add anything to your stay?</p></div>
 					<div class="col-3 text-right"><button class="secondary show-extras">Show Extras</button></div>
 				</div>
 			</div>
@@ -117,7 +117,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-12"><p>We can't guarantee special requests can be met, but we're happy to see what we can do. <a data-action="open-requests">Request special room requests.</a></p>
+		<div class="col-12"><p>If you have a special request for your room we’ll do everything we can, although we can’t guarantee all request will be met. <a data-action="open-requests">Click here to tell us your requests.</a></p>
 		</div>
 	</div>
 	<div class="special-requirements">

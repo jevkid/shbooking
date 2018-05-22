@@ -1,15 +1,15 @@
 <div class="row">
 	<div class="col-12">
 		<p class="step-title">Step 1</p>
-		<p class="step-section-title">Your party</p>
-		<p>Please let us know the names of each member of your party.</p>
+		<p class="step-section-title">Who’s travelling?</p>
+		<p>To get started we just need a few details about who will be travelling.</p>
 	</div>
 	<div class="col-12">
 		<section data-id="groupone" data-parent="group">
 			<div class="section-header">
 				<div class="row">
-					<div class="col-6">1st Group / Room</div>
-					<div class="col-6 text-right">2 Adults</div>
+					<div class="col-6">Room/Group 1</div>
+					<div class="col-6 text-right">1 Adult, 1 Child</div>
 				</div>
 			</div>
 
@@ -69,7 +69,7 @@
 		<section data-id="grouptwo" data-parent="group">
 			<div class="section-header">
 				<div class="row">
-					<div class="col-6">2nd Group / Room</div>
+					<div class="col-6">Room/Group 2</div>
 					<div class="col-6 text-right">1 Adult</div>
 				</div>
 			</div>

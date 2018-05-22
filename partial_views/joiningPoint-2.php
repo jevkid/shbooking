@@ -7,7 +7,7 @@
 <div class="row">
 	<div class="col-12">
 		<p class="subtitle">How would you like to join your holiday?</p>
-		<p class="section-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae tincidunt justo. Nam sed maximus leo. Donec facilisis, risus id euismod laoreet, tortor ante ornare turpis, vitae interdum ante nibh id ipsum. <br><br>Aliquam in tellus tristique, porta orci eu, faucibus elit. In ac mi sodales, eleifend magna ac, gravida turpis. Nulla dolor urna, ultrices eu lacus eget, laoreet laoreet quam. Duis orci dolor, lacinia sit amet pretium eu, semper in velit. Pellentesque imperdiet auctor massa non gravida. Duis vitae turpis ante.</p>
+		<p class="section-intro">We have three easy ways for you to join your Shearings holiday, ensuring your travel arrangements are most suitable for you. Find out about our tour connect, direct connect and home connect options below and choose the one that work’s best for you. </p>
 	</div>
 </div>
 <div class="row">
@@ -17,15 +17,25 @@
 			<div class="option">
 				<div class="row">
 					<div class="col-12 col-md-3">
-						<input type="radio" data-radio-option="Joining Point" name="joiningoption" value="joining-point"> <label>Joining Point</label>
+						<input type="radio" data-radio-option="Joining Point" name="joiningoption" value="joining-point"> <label>Tour Connect</label>
 						<p class="price">Free</p>
 					</div>
 					<div class="col-12 col-md-9">
-						<p>Make your way to one of our 300+ local joining points to start your trip, where you'll board your lorus epsum. After a short trip, you'll reach your main departure point.</p>
+						<p>Our FREE tour connect service makes it so easy to start your holiday. Simply select from hundreds of local joining points then make your way to your chose point for the time specified on your travel documents. Our coaches will pick you up and take you to our main interchanges to board your holiday coach.</p>
 					</div>
 				</div>
 			</div>
-
+			<div class="option">
+				<div class="row">
+					<div class="col-12 col-md-3">
+						<input type="radio" data-radio-option="Direct Connect" name="joiningoption" value="direct-connect"> <label>Direct Connect</label>
+						<p class="price">Free</p>
+					</div>
+					<div class="col-12 col-md-9">
+						<p>If it’s more convenient for you, you can make your own way to one of our coach interchanges and join your holiday coach directly. Car parking is available at the interchanges and is pre-bookable in the extras step.</p>
+					</div>
+				</div>
+			</div>
 			<div class="option">
 				<div class="row">
 					<div class="col-12 col-md-3">
@@ -34,23 +44,10 @@
 					</div>
 					<div class="col-12 col-md-9">
 						<span class="popular">Popular <i class="fa fa-star" aria-hidden="true"></i></span>
-						<p>Take the stress out of travel. We'll come to your home and collect you, transferring you to our lorus epsum at the nearest joining point or main departure point.</p>
+						<p>Our home connect service picks you up at your front door and brings you back at the end of your holiday. We service over 1800 postcode areas and we’ll give you a 30 minute pick up window on the date of your departure. </p>
 					</div>
 				</div>
 			</div>
-
-			<div class="option">
-				<div class="row">
-					<div class="col-12 col-md-3">
-						<input type="radio" data-radio-option="Direct Connect" name="joiningoption" value="direct-connect"> <label>Direct Connect</label>
-						<p class="price">Free</p>
-					</div>
-					<div class="col-12 col-md-9">
-						<p>Make your own way to the departure point for your trip. Ideal for lorus epsum.</p>
-					</div>
-				</div>
-			</div>
-
 		</div>
 	</div>
 </div>
