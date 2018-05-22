@@ -44,14 +44,16 @@
     <div id="accom" class="summary-section hidden">
         <span>Your Accommodation</span>
         <!-- for each group/room show hotel name - room name: cost/included -->
-        <div class="list-title">Group 1:</div>
-        <ul>
-            <li>MS Serenade 2 - Captain's Cabin: + £45 per night</li>
-        </ul>
-        <div class="list-title">Group 2:</div>
-        <ul>
-            <li>MS Serenade 2 - Beethoven's Cabin: + £22 per night</li>
-        </ul>
+        <div data-accom-group-id="1" class="hidden">
+            <div class="list-title"></div>
+            <ul data-group-room="1"></ul>
+            <ul data-group-extras="1"></ul>
+        </div>
+        <div data-accom-group-id="2" class="hidden">
+            <div class="list-title"></div>
+            <ul data-group-room="2"></ul>
+            <ul data-group-extras="2"></ul>
+        </div>
     </div>
     <div id="price" class="summary-section hidden">
         <div class="summary-title">Total Price</div>

@@ -22,6 +22,10 @@ var navigationToggle = function(isBackButton) {
 		}
 	});
 	step = isBackButton ? (currentStep - 1) : (currentStep + 1);
+	
+	if(currentStep == 8 && !isBackButton){
+		
+	}
 	/* Find the current step and hide it. Increment the step, and
 	 * remove the hidden class
 	 */
@@ -76,16 +80,23 @@ var joiningToggle = function(groupParent){
 	
 };
 
-var coachToggle = function() {
-	// TODO
-};
+var accomToggle = function(section) {
+	var groupNum = $('[data-summary-id="' +  section + '"]').find('[data-accom-group]').data('accomGroup');
+	var group = $('[data-accom-group-id="' + groupNum + '"]');
+	$(group).removeClass('hidden');	
+	var accom;
+	$('[data-accom-group="' + groupNum + '"]').find('input').each(function(){
+		if($(this).is(':checked')){
+			accom = $(this).val();
+		}
+	});
 
-// var flightToggle = function() {
-// 	// TODO
-// };
-
-var accomToggle = function() {
-	// TODO
+	if($('[data-group-room="' + groupNum + '"]').find('li').length <= 0){
+		$(group).find('.list-title').text('Group/Room ' + groupNum );
+		$('[data-group-room="' + groupNum + '"]').append('<li>' + accom + '</li>');
+	} else {
+		$('[data-group-room="' + groupNum + '"]').find('li').text(accom);
+	}
 };
 
 var validateFields = function(parent){
@@ -113,22 +124,29 @@ var validateFields = function(parent){
 	return isValid;
 };
 
+var updatePrice = function() {
+	// TODO
+};
+
 var summaryToggle = function(section, parent){
+
 	if(section === 'party'){
 		groupSummaryToggle(parent);
 	}
 	if(section === 'joining'){
 		joiningToggle(parent);
 	}
-	if(section === 'air'){
-		joiningToggle(parent);
+	if(section.indexOf('accom') >= 0){
+		accomToggle(section, parent);
 	}
 	$('#' + section).removeClass('hidden');
 };
 
-var updatePrice = function() {
-	// TODO
-};
+$('html').on('click', '.add-to-booking', function(){
+	var extra = $(this).siblings('.item-title').text();
+	var num = $(this).parents('[data-accom-group]').data('accomGroup');
+	$('[data-group-extras="' + num + '"]').append('<li>Extra: ' + extra + '</li>');
+});
 
 $('html').on('click', '[data-current-step]', function() {
 	var parent;

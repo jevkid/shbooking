@@ -37,10 +37,10 @@
 					<div class="hidden" data-step="4" data-next="accom" data-prev="travel" data-summary-id="air">
 						<?php include("partial_views/air-4.php"); ?>
 					</div>
-					<div class="hidden" data-step="5" data-next="details" data-prev="accom" data-summary-id="accom">
+					<div class="hidden" data-step="5" data-next="accom" data-prev="air" data-summary-id="accom">
 						<?php include("partial_views/accommodation-5.php"); ?>
 					</div>
-					<div class="hidden" data-step="6" data-next="details" data-prev="accom-part-2" data-summary-id="accom-part-2">
+					<div class="hidden" data-step="6" data-next="details" data-prev="accom" data-summary-id="accom-part-2">
 						<?php include("partial_views/accommodation-6.php"); ?>
 					</div>
 					<div class="hidden" data-step="7" data-next="extras" data-prev="accom-part-2">

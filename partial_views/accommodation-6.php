@@ -10,7 +10,7 @@
 	</div>
 </div>
 
-<div class="group">
+<div class="group" data-accom-group="2">
 	<div class="row">
 		<div class="col-12">
 		<p class="subtitle">Group 2: A Name & A Name (2 Adults)</p>
@@ -40,7 +40,7 @@
 				<div class="option">
 					<div class="row">
 						<div class="col-12 col-md-3">
-							<input type="radio" name="group2-joiningoption" checked="checked" data-id="0"> <label>Captain's Cabin</label>
+							<input type="radio" name="group2-joiningoption" checked="checked" data-id="0" value="Captain's Cabin"> <label>Captain's Cabin</label>
 							<p class="price">+ £45 per night</p>
 						</div>
 						<div class="col-12 col-md-9">
@@ -58,7 +58,7 @@
 				<div class="option">
 					<div class="row">
 						<div class="col-12 col-md-3">
-							<input type="radio" name="group2-joiningoption" data-id="1"> <label>Beethoven's Cabin</label>
+							<input type="radio" name="group2-joiningoption" data-id="1" value="Beethoven's Cabin"> <label>Beethoven's Cabin</label>
 							<p class="price">+ £22 per night</p>
 						</div>
 						<div class="col-12 col-md-9">
@@ -76,7 +76,7 @@
 				<div class="option active">
 					<div class="row">
 						<div class="col-12 col-md-3">
-							<input type="radio" name="group2-joiningoption" data-id="2" checked="checked"> <label>Chopin Cabin</label>
+							<input type="radio" name="group2-joiningoption" data-id="2" checked="checked" value="Chopin Cabin"> <label>Chopin Cabin</label>
 							<p class="price">Included</p>
 						</div>
 						<div class="col-12 col-md-9">
