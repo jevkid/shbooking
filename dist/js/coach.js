@@ -1,8 +1,9 @@
 function init(){
     var coachInput = document.getElementById('HolidayCoaches').getAttribute('value').replace(/'/g, '"');
     coachInput = JSON.parse(coachInput);
+    var componentId = coachInput[0].ComponentID;
+
     var coaches = coachInput[0].SeatMapDetails;
-    
     coaches.sort(function(a, b){
       return a.SeatId - b.SeatId;
     });
@@ -29,7 +30,7 @@ function init(){
         var li = document.createElement('li');
         var liClass = availMap[coaches[key].Status].toLowerCase();
         li.setAttribute("id", coaches[key].SeatNumber);
-        li.setAttribute("data-coach-id", coaches[key].CoachId);
+        li.setAttribute("data-coach-id", componentId);
         li.setAttribute("data-seat-id", coaches[key].SeatId);
         li.setAttribute("data-seat-num", coaches[key].SeatNumber);
         li.setAttribute("class", liClass);
@@ -92,4 +93,3 @@ function init(){
   }
   
   init();
-  
