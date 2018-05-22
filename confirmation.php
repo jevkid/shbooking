@@ -3,6 +3,7 @@
 		<?php include("stylesheets.php"); ?>
 		<title>Booking Reference: H70018 | Shearings</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf8">
 	</head>
 	<body>
 		<header>
