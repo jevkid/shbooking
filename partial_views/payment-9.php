@@ -10,15 +10,15 @@
     <div class="col-12">
         <p class="form-section-title">Payment Method</p>
     </div>
-    <div class="col-3 payment-method-options">
+    <div class="col-12 col-md-3 payment-method-options">
         <input type="radio" name="paymentMethod" id="payDeposit" checked="checked"><label for="payDeposit">Pay deposit only</label><br>
         <input type="radio" name="paymentMethod" id="payFull"><label for="payFull">Pay balance in full</label>
     </div>
-    <div class="col-6">
+    <div class="col-12 col-md-6">
         <label>Amount to Pay</label>
         <input type="text" value="£1,000,000">
     </div>
-    <div class="col-3">
+    <div class="col-12 col-md-3">
         <img src="https://www.shearings.com/Content/Images/sh/img/safe-payments.png" width="100%">
     </div>
 </div>

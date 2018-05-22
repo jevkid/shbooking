@@ -48,6 +48,7 @@ var navigationToggle = function(isBackButton) {
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
 
 	if(currentStep == 9){
+		$(".continue-btn").prop("disabled", true);
 		$(".continue-btn").click(function() { window.location='confirmation'; });
 	}
 };

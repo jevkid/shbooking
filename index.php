@@ -2,17 +2,18 @@
 	<head>
 		<?php include("stylesheets.php"); ?>
 		<title>Booking Engine | Shearings</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-6">
+					<div class="col-6">
 						<div class="logo">
 							<img src="https://d28wrjgfs2j02n.cloudfront.net/images/default-source/test-library/logo672568c0c1694119b999e3fd165ca7ad.jpg?sfvrsn=454c2974_1" width="176" style="padding: 1rem 0;" alt="">
 						</div>
 					</div>
-					<div class="col-12 col-md-6 text-right" style="padding: 1.6rem 0 0;">
+					<div class="col-6 text-right" style="padding: 1.6rem 0 0;">
 						<span style="color: #666666">Call us today on:</span>
 						<h3 style="color: #0068b9">01942 417545</h3>
 					</div>
@@ -55,13 +56,16 @@
 					<div class="hidden" data-step="10" data-current="confirm">
 						<?php include("partial_views/payment-9.php"); ?>
 					</div>
-					<div class="pull-right">
-						<button type="button" data-current-step="1" class="continue-btn">Continue</button>
+					<div data-alert class="col-8 error alert alert-warning text-left hidden">Please ensure you have filled out all required fields.</div>
+
+					<div class="row">
+						<div class="col-6">
+							<a href="#" class="back-button btn secondary hidden" data-previous-step>Back</a>
+						</div>
+						<div class="col-6 text-right">
+							<button type="button" data-current-step="1" class="continue-btn">Continue</button>
+						</div>
 					</div>
-					<div class="pull-left">
-						<a href="#" class="back-button btn secondary hidden" data-previous-step>Back</a>
-					</div>
-					<div data-alert class="col-8 alert alert-warning text-left hidden">Please ensure you have filled out all required fields.</div>
 				</div>
 				<div class="col-12 col-md-4">
 					<?php include("partial_views/summary.php"); ?>

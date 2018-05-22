@@ -36,9 +36,8 @@
         </div>
         <div class="col-12">
             <label for="">Select Area</label>
-            <select>
+            <select id="dropoffselect">
                 <option value="">Please Select</option>
-                <option value="">Wigan Bus Station at 15:00</option>
             </select>
         </div>
     </div>

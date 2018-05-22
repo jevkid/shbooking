@@ -27,10 +27,10 @@
 			<div class="col-12">
 				<p class="room-title form-section-title"></p>
 			</div>
-			<div class="col-6 accomm-text">
+			<div class="col-12 col-md-6 accomm-text">
 				<p class="room-text"></p>
 			</div>
-			<div class="col-6 accomm-img"><img src="" alt="" class="room-cabin-image"></div>
+			<div class="col-12 col-md-6 accomm-img"><img src="" alt="" class="room-cabin-image"></div>
 		</div>
 	</div>
 	<div class="row">
@@ -99,8 +99,8 @@
 		<div class="col-12">
 			<div class="hidden-section-header">
 				<div class="row">
-					<div class="col-9"><p>Would you like to add anything to your stay?</p></div>
-					<div class="col-3 text-right"><button class="secondary show-extras" data-toggle="collapse" data-target="#group2-extras" aria-expanded="false">Show Extras</button></div>
+					<div class="col-12 col-md-9"><p>Would you like to add anything to your stay?</p></div>
+					<div class="col-12 col-md-3 text-right"><button class="secondary show-extras" data-toggle="collapse" data-target="#group2-extras" aria-expanded="false">Show Extras</button></div>
 				</div>
 			</div>
 		</div>

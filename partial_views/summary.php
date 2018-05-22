@@ -1,6 +1,7 @@
 <div class="summary">
-    <div class="summary-title">Summary</div>
-    <hr />
+    <div class="summary-title"><p class="section-header">Booking Summary</p></div>
+    <p id="hol-title">Spectacular Delights of Wigan</p>
+    <p id="dep-date"><strong>Departing:</strong> 23/12/1970</p>
     <div id="party" class="summary-section hidden">
         <!--for each group room, display room -->
         <div data-group-id="1">

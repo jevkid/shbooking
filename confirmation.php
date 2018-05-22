@@ -2,6 +2,7 @@
 	<head>
 		<?php include("stylesheets.php"); ?>
 		<title>Booking Reference: H70018 | Shearings</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<header>
@@ -9,7 +10,7 @@
 				<div class="row">
 					<div class="col-12 col-md-6">
 						<div class="logo">
-							<img src="https://d28wrjgfs2j02n.cloudfront.net/images/default-source/test-library/logo672568c0c1694119b999e3fd165ca7ad.jpg?sfvrsn=454c2974_1" width="176" style="padding: 1rem 0;" alt="">
+							<a href="/shbooking"><img src="https://d28wrjgfs2j02n.cloudfront.net/images/default-source/test-library/logo672568c0c1694119b999e3fd165ca7ad.jpg?sfvrsn=454c2974_1" width="176" style="padding: 1rem 0;" alt=""></a>
 						</div>
 					</div>
 					<div class="col-12 col-md-6 text-right" style="padding: 1.6rem 0 0;">

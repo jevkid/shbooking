@@ -43,6 +43,11 @@ a{
 			background-color: $green;
 			color: white;
 		}
+
+		&:disabled{
+			background-color: $grey;
+			cursor: not-allowed;
+		}
 	}
 }
 
@@ -58,18 +63,26 @@ h1{
 	background-color: $light-grey;
 	padding: 2rem;
 	margin: 0.8rem 0;
+	border-radius: $border-radius;
+
+	#hol-title{
+		margin: -8px 0 0;
+		font-size: rem(20);
+		color: $blue;
+	}
+
 	.summary-section {
 		padding: 0.3rem;
-		font-size: 14px;
+		font-size: rem(14);
 
 		span {
-			font-size: 16px;
+			font-size: rem(16);
 			font-weight: 500;
 			padding: 0.2rem 0;
 			border-bottom: 1px solid rgba(0,0,0,.1);
 		}
 		.list-title {
-			font-size: 16px;
+			font-size: rem(16);
 			margin: 0.5rem 0;
 		}
 
@@ -80,7 +93,7 @@ h1{
 	.summary-title {
 		color: $grey;
 		font-weight: 500;
-		font-size: 21px;
+		font-size: rem(21);
 	}
 }
 
@@ -139,7 +152,7 @@ footer{
 }
 
 .step-section-text{
-	font-size: 16px;
+	font-size: rem(16);
 	font-weight: 500;
 }
 
@@ -187,20 +200,20 @@ footer{
 }
 
 .info {
-	width: 20px;
-	height: 20px;
+	width: rem(20);
+	height: rem(20);
 	border-radius: 50%;
 	background-color: $border-grey;
 	color: white;
 	padding: 1px 7px;
 	margin-right: 5px;
 	font-family: monospace;
-	font-size: 24px;
+	font-size: rem(24);
     font-weight: 600;
 }
 
 .info-text {
-	font-size: 12px;
+	font-size: rem(12);
 	color: grey;
 }
 
@@ -265,6 +278,11 @@ button{
 		background-color: $green;
 		color: white;
 	}
+
+	&:disabled{
+		background-color: $grey;
+		cursor: not-allowed;
+	}
 }
 
 .panel {
@@ -272,7 +290,7 @@ button{
 
 	.panel-body {
 		padding: 0.8rem;
-		font-size: 18px;
+		font-size: rem(18);
 		font-weight: 500;
 	}
 }
@@ -330,6 +348,10 @@ button{
 			columns: 3;
 			list-style-position: inside;
 			padding-left: 0;
+
+			@include media("med"){
+				columns: 1;
+			}
 		}
 	}
 }
@@ -389,6 +411,10 @@ button{
 	}
 }
 
+.show-extras{
+	width: 100%;
+}
+
 .item-title{
 	font-size: rem(22);
 }
@@ -413,6 +439,10 @@ button{
 		label{
 			margin-left: 0.3rem;
 		}
+
+		@include media("med"){
+			columns: 1;
+		}
 	}
 }
 
@@ -425,4 +455,8 @@ button{
 .outward-info, .return-info{
 	color: $green;
 	font-weight: 500;
+}
+
+#stepone-lead-passenger{
+	background-color: $light-grey;
 }

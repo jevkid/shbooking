@@ -77,7 +77,7 @@
 </div>
 <div class="guest">
     <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <label for="">Title <span class="required">*</span></label>
             <select name="" id="">
                 <option value="">-</option>
@@ -89,11 +89,11 @@
                 <option value="Fr">Fr</option>
             </select>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <label for="">Forename <span class="required">*</span></label>
             <input type="text">
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <label for="">Surname <span class="required">*</span></label>
             <input type="text">
         </div>
@@ -108,7 +108,7 @@
 
 <div class="guest">
     <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <label for="">Title <span class="required">*</span></label>
             <select name="" id="">
                 <option value="">-</option>
@@ -120,11 +120,11 @@
                 <option value="Fr">Fr</option>
             </select>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <label for="">Forename <span class="required">*</span></label>
             <input type="text">
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <label for="">Surname <span class="required">*</span></label>
             <input type="text">
         </div>
@@ -132,7 +132,7 @@
 </div>
 <div class="guest">
     <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <label for="">Title <span class="required">*</span></label>
             <select name="" id="">
                 <option value="">-</option>
@@ -144,11 +144,11 @@
                 <option value="Fr">Fr</option>
             </select>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <label for="">Forename <span class="required">*</span></label>
             <input type="text">
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <label for="">Surname <span class="required">*</span></label>
             <input type="text">
         </div>
