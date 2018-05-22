@@ -31,25 +31,28 @@
 					<div class="hidden" data-step="2" data-next="travel" data-prev="travel" data-summary-id="joining">
 						<?php include("partial_views/joiningPoint-2.php"); ?>
 					</div>
-					<div class="hidden" data-step="3" data-next="travel" data-prev="travel" data-summary-id="seating">
+					<div class="hidden" data-step="3" data-next="travel" data-prev="travel" data-summary-id="joining-lookup">
+						<?php include("partial_views/joining-point-lookup.php"); ?>
+					</div>
+					<div class="hidden" data-step="4" data-next="travel" data-prev="joining-lookup" data-summary-id="seating">
 						<?php include("partial_views/coach-3.php"); ?>
 					</div>
-					<div class="hidden" data-step="4" data-next="accom" data-prev="travel" data-summary-id="air">
+					<div class="hidden" data-step="5" data-next="accom" data-prev="travel" data-summary-id="air">
 						<?php include("partial_views/air-4.php"); ?>
 					</div>
-					<div class="hidden" data-step="5" data-next="accom" data-prev="air" data-summary-id="accom">
+					<div class="hidden" data-step="6" data-next="accom-part-2" data-prev="accom" data-summary-id="accom">
 						<?php include("partial_views/accommodation-5.php"); ?>
 					</div>
-					<div class="hidden" data-step="6" data-next="details" data-prev="accom" data-summary-id="accom-part-2">
+					<div class="hidden" data-step="7" data-next="details" data-prev="accom" data-summary-id="accom-part-2">
 						<?php include("partial_views/accommodation-6.php"); ?>
 					</div>
-					<div class="hidden" data-step="7" data-next="extras" data-prev="accom-part-2">
+					<div class="hidden" data-step="8" data-next="extras" data-prev="accom-part-2">
 						<?php include("partial_views/guestDetails-7.php"); ?>
 					</div>
-					<div class="hidden" data-step="8" data-next="confirm" data-prev="extras" data-summary-id="extras">
+					<div class="hidden" data-step="9" data-next="confirm" data-prev="extras" data-summary-id="extras">
 						<?php include("partial_views/extras-8.php"); ?>
 					</div>
-					<div class="hidden" data-step="9" data-prev="confirm">
+					<div class="hidden" data-step="10" data-prev="confirm">
 						<?php include("partial_views/payment-9.php"); ?>
 					</div>
 					<div class="pull-right">
