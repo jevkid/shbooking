@@ -56,7 +56,7 @@
 						<?php include("partial_views/payment-9.php"); ?>
 					</div>
 					<div class="pull-right">
-						<button type="button" data-current-step="1">Continue</button>
+						<button type="button" data-current-step="1" class="continue-btn">Continue</button>
 					</div>
 					<div class="pull-left">
 						<a href="#" class="back-button btn secondary hidden" data-previous-step>Back</a>
@@ -80,6 +80,6 @@
 		<script src="dist/js/flights.js"></script>
 		<script src="dist/js/coach.js"></script>
 		<script src="dist/js/room-cabin-info.js"></script>
-		
+		<script src="dist/js/get-feeder-pickups.js"></script>
 	</body>
 </html>

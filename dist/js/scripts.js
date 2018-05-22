@@ -46,6 +46,10 @@ var navigationToggle = function(isBackButton) {
 
 	// Scroll to the top of the page
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
+
+	if(currentStep == 9){
+		$(".continue-btn").click(function() { window.location='confirmation'; });
+	}
 };
 
 var groupSummaryToggle = function(groupParent) {
