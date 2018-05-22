@@ -364,7 +364,6 @@ button{
 }
 
 .room-extras{
-	display: none;
 
 	.extra-img{
 		width: 100%;
@@ -408,10 +407,11 @@ button{
 
 		input, label{
 			width: auto !important;
+			display: inline;
 		}
 
-		input{
-			margin-right: 0.3rem;
+		label{
+			margin-left: 0.3rem;
 		}
 	}
 }
