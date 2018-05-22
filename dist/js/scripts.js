@@ -51,6 +51,14 @@ var navigationToggle = function(isBackButton) {
 		$(".continue-btn").prop("disabled", true);
 		$(".continue-btn").click(function() { window.location='confirmation'; });
 	}
+
+	$('#agreepolicyandterms').on('ifChecked', function(event){
+		$(".continue-btn").prop("disabled", false);
+	});
+
+	$('#agreepolicyandterms').on('ifUnchecked', function(event){
+		$(".continue-btn").prop("disabled", true);
+	});
 };
 
 var groupSummaryToggle = function(groupParent) {
