@@ -100,13 +100,13 @@
 			<div class="hidden-section-header">
 				<div class="row">
 					<div class="col-9"><p>Would you like to add anything to your stay?</p></div>
-					<div class="col-3 text-right"><button class="secondary show-extras">Show Extras</button></div>
+					<div class="col-3 text-right"><button class="secondary show-extras" data-toggle="collapse" data-target="#group2-extras" aria-expanded="false">Show Extras</button></div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="room-extras">
+	<div class="room-extras" id="group2-extras">
 		<div class="row">
 			<div class="col-12 col-md-4 room-extra"><img src="http://booking.cwallermedia.co.uk/img/carparking.jpg" alt="Car Parking" class="extra-img"><p class="item-title">Car Parking</p><p class="price">+ £45 per night</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex similique pariatur sapiente quisquam et nobis in ipsa magnam beatae at excepturi enim aperiam illo nihil, blanditiis incidunt itaque dicta vero?</p><button class="secondary add-to-booking radial-in">Add to Booking</button></div>
 			<div class="col-12 col-md-4 room-extra"><img src="http://booking.cwallermedia.co.uk/img/wifi.jpg" alt="Wi-Fi" class="extra-img"><p class="item-title">Wi-Fi</p> <p class="price">+ £5 per night</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex similique pariatur sapiente quisquam et nobis in ipsa magnam beatae at excepturi enim aperiam illo nihil, blanditiis incidunt itaque dicta vero?</p><button class="secondary add-to-booking radial-in">Add to Booking</button></div>
@@ -127,15 +127,15 @@
 			</div>
 		</div>
 		<ul>
-			<li><input type="checkbox" name="" id="">Room with a view</li>
-			<li><input type="checkbox" name="" id="">Room near a lift</li>
-			<li><input type="checkbox" name="" id="">An Item</li>
-			<li><input type="checkbox" name="" id="">An Item</li>
-			<li><input type="checkbox" name="" id="">An Item</li>
-			<li><input type="checkbox" name="" id="">An Item</li>
-			<li><input type="checkbox" name="" id="">An Item</li>
-			<li><input type="checkbox" name="" id="">An Item</li>
-			<li><input type="checkbox" name="" id="">An Item</li>
+		<li><input type="checkbox" name="" id="group-2-roomwav"><label for="group-2-roomwav">Room with a view</label></li>
+		<li><input type="checkbox" name="" id="group-2-roomnal"><label for="group-2-roomnal">Room near a lift</label></li>
+		<li><input type="checkbox" name="" id="group-2-anitem1"><label for="group-2-anitem1">An Item</label></li>
+		<li><input type="checkbox" name="" id="group-2-anitem2"><label for="group-2-anitem2">An Item</label></li>
+		<li><input type="checkbox" name="" id="group-2-anitem3"><label for="group-2-anitem3">An Item</label></li>
+		<li><input type="checkbox" name="" id="group-2-anitem4"><label for="group-2-anitem4">An Item</label></li>
+		<li><input type="checkbox" name="" id="group-2-anitem5"><label for="group-2-anitem5">An Item</label></li>
+		<li><input type="checkbox" name="" id="group-2-anitem6"><label for="group-2-anitem6">An Item</label></li>
+		<li><input type="checkbox" name="" id="group-2-anitem7"><label for="group-2-anitem7">An Item</label></li>
 		</ul>
 	</div>
 </div>
