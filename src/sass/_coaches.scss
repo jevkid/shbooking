@@ -36,10 +36,13 @@
             background-color: #79b928;
           }
         }
-        &.reserved {
+        &.reserved,
+        &.booked,
+        &.unavailable {
           @include icon($brand-secondary, none, 25px, 5px, 10px);
         }
-        &.facility {
+        &.facility,
+        &.toilet {
           @include icon(red, 1px solid red, 25px, 5px, 10px);
         }
         &.selected {
