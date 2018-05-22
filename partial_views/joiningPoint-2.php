@@ -17,7 +17,7 @@
 			<div class="option">
 				<div class="row">
 					<div class="col-12 col-md-3">
-						<input type="radio" data-radio-option="Joining Point" name="joiningoption" value="joining-point" checked> <label>Joining Point</label>
+						<input type="radio" data-radio-option="Joining Point" name="joiningoption" value="joining-point"> <label>Joining Point</label>
 						<p class="price">Free</p>
 					</div>
 					<div class="col-12 col-md-9">
