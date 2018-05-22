@@ -18,7 +18,7 @@ var navigationToggle = function(isBackButton) {
 			/* Grab the "next" attribute from the current step, determining which is
 			* the next step 
 			*/
-			navText = isBackButton ? $(this).prev().data('prev') : $(this).data('next');
+			navText = isBackButton ? $(this).prev().data('current') : $(this).data('next');
 		}
 	});
 	step = isBackButton ? (currentStep - 1) : (currentStep + 1);
@@ -142,6 +142,18 @@ var summaryToggle = function(section, parent){
 	$('#' + section).removeClass('hidden');
 };
 
+$('html').on('click', '[data-nav-num]', function(){
+	var isValid = $(this).data('active');
+	var step = $(this).data('navNum');
+	
+	if(isValid){
+		$('[data-nav-num]').removeClass('active');
+		$(this).addClass('active');
+		$('[data-step]').addClass('hidden');
+		$('[data-step="' + step + '"]').removeClass('hidden');
+	}	
+});
+
 $('html').on('click', '.add-to-booking', function(){
 	var extra = $(this).siblings('.item-title').text();
 	var num = $(this).parents('[data-accom-group]').data('accomGroup');
@@ -152,8 +164,10 @@ $('html').on('click', '[data-current-step]', function() {
 	var parent;
 	var form;
 	var section;
+	var stepNum;
 	$('[data-step]').each(function(){
 		if(!$(this).hasClass('hidden')){
+			stepNum = $(this).data('step');
 			section = $(this).data('summaryId');
 			parent = $(this).find('[data-parent="group"]')
 			form = $(this);
@@ -161,6 +175,8 @@ $('html').on('click', '[data-current-step]', function() {
 	});
 	var isValid = validateFields(form);
 	if(isValid){
+		$('[data-nav-num="' + stepNum + '"]').next().attr('data-active', true)
+													.addClass('click-active');
 		$('[data-alert]').addClass('hidden');
 		$('[data-previous-step]').removeClass('hidden');
 		navigationToggle(false);
