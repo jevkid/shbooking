@@ -32,8 +32,8 @@
     <div class="row">
         <div class="col-12">
             <p>We’d love to send you details of offers, products and the latest information. We’ll always treat your personal detail with the upmost care and will never sell them to other companies for marketing purposes.</p>
-            <input type="checkbox" style="width:auto;"> <label style="width:auto; display: inline;">Please tick here if you wish to be kept up to date on our fantastic offers, news and updates by email</label>
-            <input type="checkbox" style="width:auto;"> <label style="width:auto; display: inline;">I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms and conditions</a></label>
+            <input type="checkbox" style="width:auto;" id="offersoptin"> <label for="offersoptin" style="width:auto; display: inline;">Please tick here if you wish to be kept up to date on our fantastic offers, news and updates by email</label><br>
+            <input type="checkbox" style="width:auto;" id="agreepolicyandterms"> <label for="agreepolicyandterms" style="width:auto; display: inline;">I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms and conditions</a></label>
         </div>
     </div>
 </div>

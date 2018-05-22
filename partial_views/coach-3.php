@@ -1,10 +1,10 @@
 <div class="row">
     <div class="col-12">
 		<p class="step-title">Step 2</p>
-		<p class="step-section-title">Seat Selection</p>
+		<p class="step-section-title">Coach Seat Selection</p>
     </div>
     <div class="col-12">
-        <p class="section-header">Select your seats to Amsterdam</p>               
+        <p class="section-header">Please select your seats for the coach to XXX</p>               
     </div>
     <div class="col-12">
         <p>Select a seat for
@@ -53,7 +53,7 @@
             <div class="col-6">
                 <div class="vantage-info">
                     <div class="vantage-title">Vantage Seats</div>
-                    <div class="vantage-text">Our vantage seats premium seating can offer exceptional views</div>
+                    <div class="vantage-text">Our vantage seats offer premium seating at the front of the coach, giving you the best views on board. </div>
                 </div>
             </div>
             <div class="col-4 customer">

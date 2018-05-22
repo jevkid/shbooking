@@ -59,7 +59,7 @@
 						<button type="button" data-current-step="1">Continue</button>
 					</div>
 					<div class="pull-left">
-						<a href="#" class="back-button hidden" data-previous-step>Back</a>
+						<a href="#" class="back-button btn secondary hidden" data-previous-step>Back</a>
 					</div>
 					<div data-alert class="col-8 alert alert-warning text-left hidden">Please ensure you have filled out all required fields.</div>
 				</div>
