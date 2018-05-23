@@ -50,12 +50,14 @@
         </div>
         <!-- if there are multiple coaches, display each -->
         <div class="row">
+        <!--
             <div class="col-6">
                 <div class="vantage-info">
                     <div class="vantage-title">Vantage Seats</div>
                     <div class="vantage-text">Our vantage seats offer premium seating at the front of the coach, giving you the best views on board. </div>
                 </div>
             </div>
+        -->
             <div class="col-4 customer">
                 <div class="customerSelect hidden" data-pax-count=3 id="customerSelect-1">
                     <h3>Your Seats</h3>
@@ -82,12 +84,12 @@
         </div>        
         <!-- if there are multiple coaches, display each -->
         <div class="row">
-            <div class="col-6">
+            <!--<div class="col-6">
                 <div class="vantage-info">
                     <div class="vantage-title">Vantage Seats</div>
                     <div class="vantage-text">Our vantage seats offer premium seating at the front of the coach, giving you the best views on board. </div>
                 </div>
-            </div>
+            --></div>
             <div class="col-4 customer">
                 <div class="customerSelect hidden" data-pax-count=3 id="customerSelect-2">
                     <h3>Your Seats</h3>
