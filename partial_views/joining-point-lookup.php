@@ -9,9 +9,15 @@
         <div class="col-12">
             <p class="form-section-title">Outward Journey</p>
         </div>
-        <div class="col-12">
+        <div class="col-6">
+            <label for="">Select County</label>
+            <select id="outward-county"
+                <option value="">Please Select</option>
+            </select>
+        </div>
+        <div class="col-6">
             <label for="">We will pick you up from</label>
-            <select id="pickupfromselect">
+            <select id="pickupfromselect" disabled  >
                 <option value="">Please Select</option>
             </select>
         </div>

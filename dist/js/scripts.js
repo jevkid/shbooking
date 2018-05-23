@@ -233,25 +233,25 @@ var passenger = [];
 var passengers = [];
 
 
-$("section").find($('[data-pax]')).each(function(){
-	passengerID = $(this).data('pax');
-	passengerTitle = $(this).find('[data-pax-id="title"]').val();
-	passengerForename = $(this).find('[data-pax-id="forename"]').val();
-	passengerSurname = $(this).find('[data-pax-id="surname"]').val();
-	passengerGroup = $(this).parent().data('passenger-group');
+// $("section").find($('[data-pax]')).each(function(){
+// 	passengerID = $(this).data('pax');
+// 	passengerTitle = $(this).find('[data-pax-id="title"]').val();
+// 	passengerForename = $(this).find('[data-pax-id="forename"]').val();
+// 	passengerSurname = $(this).find('[data-pax-id="surname"]').val();
+// 	passengerGroup = $(this).parent().data('passenger-group');
 	
-	console.log(passengerForename);
+// 	console.log(passengerForename);
 
-	passenger['passengerID'] = passengerID;
-	passenger['passengerTitle'] = passengerTitle;
-	passenger['passengerForename'] = passengerForename;
-	passenger['passengerSurname'] = passengerSurname;
-	passenger['passengerGroup'] = passengerGroup;
+// 	passenger['passengerID'] = passengerID;
+// 	passenger['passengerTitle'] = passengerTitle;
+// 	passenger['passengerForename'] = passengerForename;
+// 	passenger['passengerSurname'] = passengerSurname;
+// 	passenger['passengerGroup'] = passengerGroup;
 
-	passengers.push(passenger);
+// 	passengers.push(passenger);
 
-});
-console.log(passengers);
+// });
+// console.log(passengers);
 
 
 $('[data-action="open-requirements"]').on("click", function(){
