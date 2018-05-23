@@ -89,7 +89,10 @@ $('html').on('click', '[data-seat-num]', function(){
     }
 });
 
-// $('html').on('click', '[data-remove-seat]', function(){
+$('html').on('click', '[data-remove-seat]', function(){
+    $(this).removeClass('selected');
+    var id = $(this).data('removeSeat');
+    var matchingSeat = $('[data-remove-li="' + id + '"]');
 //     var $this = $(this);
 //     // This grabs the names of the passengers from the group summary
 //     var paxList = $('[data-coach-pax]').data('coachPax').split(',');
@@ -111,4 +114,4 @@ $('html').on('click', '[data-seat-num]', function(){
 //         }
 //       });
 //     }
-//   });
+});
