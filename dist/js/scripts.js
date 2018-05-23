@@ -221,3 +221,41 @@ $(function () {
 		html: true
 	})
 });
+
+$(".enter-manually").on("click", function(){
+	$(".enter-address-manually").removeClass("hidden");
+	$(".enter-postcode-address").addClass("hidden");
+});
+
+$("section").data("id")
+
+var passenger = [];
+var passengers = [];
+
+
+$("section").find($('[data-pax]')).each(function(){
+	passengerID = $(this).data('pax');
+	passengerTitle = $(this).find('[data-pax-id="title"]').val();
+	passengerForename = $(this).find('[data-pax-id="forename"]').val();
+	passengerSurname = $(this).find('[data-pax-id="surname"]').val();
+	passengerGroup = $(this).parent().data('passenger-group');
+	
+	console.log(passengerForename);
+
+	passenger['passengerID'] = passengerID;
+	passenger['passengerTitle'] = passengerTitle;
+	passenger['passengerForename'] = passengerForename;
+	passenger['passengerSurname'] = passengerSurname;
+	passenger['passengerGroup'] = passengerGroup;
+
+	passengers.push(passenger);
+
+});
+console.log(passengers);
+
+
+$('[data-action="open-requirements"]').on("click", function(){
+	var requestedGuest = $(this).data("guest");
+
+	$('[data-guest="' + requestedGuest + '"]').toggleClass("hidden");
+});

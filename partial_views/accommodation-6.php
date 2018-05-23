@@ -99,8 +99,7 @@
 		<div class="col-12">
 			<div class="hidden-section-header">
 				<div class="row">
-					<div class="col-12 col-md-9"><p>Would you like to add anything to your stay?</p></div>
-					<div class="col-12 col-md-3 text-right"><button class="secondary show-extras" data-toggle="collapse" data-target="#group2-extras" aria-expanded="false">Show Extras</button></div>
+					<div class="col-12"><p>Would you like to add anything to your stay?</p></div>
 				</div>
 			</div>
 		</div>
