@@ -74,6 +74,11 @@ var groupSummaryToggle = function(groupParent) {
 			forename = $(this).find('[data-pax-id="forename"]').val();
 			surname = $(this).find('[data-pax-id="surname"]').val();
 			$('[data-group-id="' + groupCount + '"]').find('[data-pax-num="' + paxId + '"]').text(title + ' ' + forename + ' ' + surname);
+			/* $('[data-pax-select]').each(function(){
+			* 	var coachNum = $(this).data('paxSelect');
+			* 	var input = '<input id="radio-' + paxId + '" type="radio" name="pax-select-' + coachNum + '" data-radio-pax="' + paxId + '" data-name="'+ forename + ' ' + surname +'" />';
+			* 	$('[data-pax-select="' + coachNum + '"]').append('<li data-name="'+ forename + ' ' + surname +'">' + input + '<label for="radio-' + paxId + '">' + forename + ' ' + surname + '<span></span></label></li>');
+			}); */
 			group.push(forename + ' ' + surname);
 		});
 	});

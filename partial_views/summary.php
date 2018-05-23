@@ -27,7 +27,10 @@
     <div id="seating" class="summary-section hidden">
         <span>Your Seats</span>
         <!-- if more than one coach, for each coach, display each pax and seat selection -->
-        <ul id="seatSummary"></ul>
+        <p>Coach 1</p>
+        <ul id="seatSummary-1"></ul>
+        <p>Coach 2</p>
+        <ul id="seatSummary-2"></ul>
     </div>
     <div id="air" class="summary-section hidden">
         <span>Your Flight</span>
