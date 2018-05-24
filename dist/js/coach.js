@@ -62,56 +62,42 @@ $('html').on('click', '[data-seat-num]', function(){
     // Gets which coach to use
     var coachCount = $this.data('count');
     currentPax = (selectedSeats[coachCount].length + 1);
-
     if(($this.hasClass('available') || $this.hasClass('vantage')) && !$this.hasClass('selected') && (numPax >= currentPax)) {
         /* var paxName = $('[data-radio-pax]').data('name'); */
         // Store the selected eat information
         var component = $this.data('componentId');
         var seatId = $this.data('seatId');
+        var uniqueId = component + '-' + seatId;
          // Create the hidden input
-        var input = '<input type="hidden" value="' + component + ',' + seatId + '" />';
+        var input = '<input type="hidden" value="' + component + ',' + seatId + '" data-remove-field="' + uniqueId + '"/>';
         var seatText = 'Seat ' + $this.data('seatNum');
-        selectedSeats[coachCount].push({
-            component: componentId,
-            seatId: seatId 
-        });
-        var seat = '<li class="seat" data-remove-li="' + seatId + '">' + seatText + '</li>';
-        var summary = '<li>' + seatText + '</li>';
+        selectedSeats[coachCount].push(uniqueId);
+        var seat = '<li class="seat" data-remove-field="' + uniqueId + '">' + seatText + '</li>';
+        // var summary = '<li>' + seatText + '</li>';
 
-        $('[data-pax-count]').removeClass('hidden');
+        $('.customerSelect').removeClass('hidden');
         $('#customerMap-' + coachCount).append(seat);
         $('#customerMap-' + coachCount).append(input);
 
-         $('#seatSummary-' + coachCount).append(summary);        
+        //  $('#seatSummary-' + coachCount).append(summary);
         $this.removeClass('available')
-                .addClass('selected')
-                .attr('data-remove-seat', seatId);
+             .addClass('selected')
+             .attr('data-remove-seat', uniqueId);
     }
 });
 
 $('html').on('click', '[data-remove-seat]', function(){
-    $(this).removeClass('selected');
+    var $this = $(this);
+    $(this).removeClass('selected')
+           .addClass('available');
     var id = $(this).data('removeSeat');
-    var matchingSeat = $('[data-remove-li="' + id + '"]');
-//     var $this = $(this);
-//     // This grabs the names of the passengers from the group summary
-//     var paxList = $('[data-coach-pax]').data('coachPax').split(',');
-//     // Get the name of the pax to be removed
-//     var thisPax = $(this).data('removeSeat');
-//     // Get the coach count to display the pax in the right seat summary
-//     var coachCount = $(this).data('count');
-//     // Count the current number of pax displayed in the summary
-//     var currentPaxCount = $('#customerMap-' + coachCount).children('li');
-//     if($(this).hasClass('selected')){
-//       $(this).removeClass('selected')
-//              .addClass('available');
-//       $(currentPaxCount).each(function(){
-//         if($(this).text().indexOf(thisPax) > -1){
-//             $('[data-remove-li="' + thisPax + '"]').remove();
-//             $('[data-pax-name]').text(thisPax);
-//             // set new index on seat
-//             $this.attr('data-new-count', paxList.indexOf(thisPax));
-//         }
-//       });
-//     }
+    var matchingFields = $('[data-remove-field="' + id + '"]');
+    $(matchingFields).each(function(){
+        $(this).remove();
+    });
+    var count = $this.data('count');
+    selectedSeats[count].splice(selectedSeats[count].indexOf(id), 1);
+    // Don't put the stuff in summary until progressing to next page
+
+    $this.removeAttr('data-remove-seat');
 });

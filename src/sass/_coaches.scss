@@ -52,7 +52,8 @@
         &.toilet {
           @include icon(red, 1px solid red, 25px, 5px, 10px);
         }
-        &.selected {
+        &.selected,
+        &.selected.vantage {
           @include icon(#79b928, 1px solid #79b928, 25px, 5px, 10px);
         }
         &.vantage {

@@ -58,7 +58,7 @@
     </div>
     <div class="col-md-6 col-xs-12 customer">
         <h4>Your Seats</h4>
-        <div class="customerSelect hidden" data-pax-count=3 id="customerSelect-1">
+        <div class="customerSelect hidden" id="customerSelect-1">
             <ul class="customerList" id="customerMap-1"></ul>
         </div>
     </div>
@@ -86,7 +86,7 @@
     </div>
     <div class="col-md-6 col-xs-12 customer">
         <h4>Your Seats</h4>
-        <div class="customerSelect hidden" data-pax-count=3 id="customerSelect-2">
+        <div class="customerSelect hidden" id="customerSelect-2">
             <ul class="customerList" id="customerMap-2"></ul>
         </div>
     </div>

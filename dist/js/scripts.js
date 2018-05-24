@@ -82,7 +82,6 @@ var groupSummaryToggle = function(groupParent) {
 			group.push(forename + ' ' + surname);
 		});
 	});
-	$('[data-pax-count]').attr('data-coach-pax', group);
 	$('[data-pax-name]').text(group[0]);
 };
 
@@ -96,6 +95,18 @@ var joiningToggle = function(groupParent){
 		$('#join-type').text(checked);
 	});
 	
+};
+
+var coachToggle = function(parent){
+	$('.customerSelect').each(function(){
+		var id = $(this).attr('id').split('-')[1];
+		if($('#seatSummary-' + id).children('li').length > 0){
+			$('#seatSummary-' + id).empty();
+		}
+		$(this).find('.customerList').children('li').each(function(){
+			$('#seatSummary-' + id).append('<li>' + $(this).text() + '</li>');
+		});
+	});
 };
 
 var accomToggle = function(section) {
@@ -132,13 +143,14 @@ var validateFields = function(parent){
 		}
 	});
 
-	if(parent.find($('#customerMap')).length){
-		var paxCount = $('[data-pax-count]').data('paxCount');
-		if($('#customerMap').find('input').length < paxCount){
-			isValid = false;
-		}
+	if(parent.find($('.customerSelect')).length){
+		var paxCount = $('#TotalPassengers').val();
+		$('.customerSelect').each(function(){
+			if($(this).find('.customerList').children('li').length < paxCount){
+				isValid = false;
+			}
+		});
 	}
-
 	return isValid;
 };
 
@@ -156,6 +168,9 @@ var summaryToggle = function(section, parent){
 	}
 	if(section.indexOf('accom') >= 0){
 		accomToggle(section, parent);
+	}
+	if(section.indexOf('seating') >= 0){
+		coachToggle(parent);
 	}
 	$('#' + section).removeClass('hidden');
 };
