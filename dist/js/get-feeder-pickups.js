@@ -1,49 +1,67 @@
-var secondinput = $("#FeederPickupCoaches").val();
-var parse = JSON.parse(secondinput);
+var FeederPickupCoaches = $("#FeederPickupCoaches").val();
+var FeederDropoffCoaches = $("#FeederDropoffCoaches").val();
+var parsePickup = JSON.parse(FeederPickupCoaches);
+var parseDropoff = JSON.parse(FeederDropoffCoaches);
 
 var counties = [];
 var pickup = [];
 var pickups = [];
+var dropOffCounties = [];
 
-$.each(parse[0].PickupPoints, function(i, item){
+$.each(parsePickup[0].PickupPoints, function(i, item){
     counties.push(item.Address);
 });
 
 var removeDupes = $.unique(counties);
 
 $.each(removeDupes, function(i, item){  
-    $("#outward-county").append('<option data-value="">' + item + ' </option>').niceSelect('update');
+    $("#pickup-county").append('<option data-value="">' + item.toLowerCase() + ' </option>').niceSelect('update');
 });
 
-var arr = [];
+$.each(parseDropoff[0].PickupPoints, function(i, item){
+    dropOffCounties.push(item.Address);
+});
 
-$.each(parse[0].PickupPoints, function (i, item) {
-    arr.push({
+var removeDropoffDupes = $.unique(dropOffCounties);
+
+$.each(removeDropoffDupes, function(i, item){  
+    $("#dropoff-county").append('<option data-value="">' + item.toLowerCase() + ' </option>').niceSelect('update');
+});
+
+var pickupsArr = [];
+var dropOffs = [];
+
+$.each(parsePickup[0].PickupPoints, function (i, item) {
+    pickupsArr.push({
         name: item.Name, 
         address:  item.Address
     });
 }); 
 
-$("#outward-county").on("change", function(){
-    getPickups($(this).val());
+$.each(parseDropoff[0].PickupPoints, function(i, item){
+    dropOffs.push({
+        name: item.Name,
+        address: item.Address
+    });
 });
 
+$("#pickup-county").on("change", function(){
+    returnPickups($(this).val(),pickupsArr,$("#pickupfromselect"));
+});
 
-function getPickups(inputCounty) {
+$("#dropoff-county").on("change", function(){
+    returnPickups($(this).val(),dropOffs,$("#dropoffselect"));
+});
 
-    $("#pickupfromselect").find('option').remove().niceSelect('update');
-
-    $.each(arr, function(i, el){
-        var county = inputCounty;
+function returnPickups(inputCounty, array, postback) {
     
-        if( el.address == county ){
-            $("#pickupfromselect").append('<option data-value="">' + el.name + '</option>').niceSelect('update').prop("disabled", false);
+    postback.find('option').remove().niceSelect('update');
+
+    $.each(array, function(i, el){
+        var county = inputCounty.toLowerCase();
+    
+        if( el.address.toLowerCase() == county ){
+            postback.append('<option data-value="">' + el.name + '</option>').niceSelect('update').prop("disabled", false);
         }
     });
 }
-
-// $.each(parse[0].PickupPoints, function(i, item){
-//     $("#pickupfromselect").append('<option data-value="' + item.PickupPointID + '">' + item.Name + ' (' + item.Address + ') </option>').niceSelect('update');
-//     $("#dropoffselect").append('<option data-value="' + item.PickupPointID + '">' + item.Name + ' (' + item.Address + ') </option>').niceSelect('update');
-// });
-
