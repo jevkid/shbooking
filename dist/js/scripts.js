@@ -98,12 +98,12 @@ var joiningToggle = function(groupParent){
 };
 
 var coachToggle = function(parent){
-	$('.customerSelect').each(function(){
-		var id = $(this).attr('id').split('-')[1];
+	$('.customer-select').each(function(){
+		var id = $(this).attr('id').split('-')[2];
 		if($('#seatSummary-' + id).children('li').length > 0){
 			$('#seatSummary-' + id).empty();
 		}
-		$(this).find('.customerList').children('li').each(function(){
+		$(this).find('.customer-list').children('li').each(function(){
 			$('#seatSummary-' + id).append('<li>' + $(this).text() + '</li>');
 		});
 	});
@@ -143,10 +143,10 @@ var validateFields = function(parent){
 		}
 	});
 
-	if(parent.find($('.customerSelect')).length){
+	if(parent.find($('.customer-select')).length){
 		var paxCount = $('#TotalPassengers').val();
-		$('.customerSelect').each(function(){
-			if($(this).find('.customerList').children('li').length < paxCount){
+		$('.customer-select').each(function(){
+			if($(this).find('.customer-list').children('li').length < paxCount){
 				isValid = false;
 			}
 		});

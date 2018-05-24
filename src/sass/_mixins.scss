@@ -34,4 +34,9 @@
     height: $size;
     padding: $padding;
     margin-right: $margin;
+    @media screen and (max-width: 766px) {
+        width: ($size + 10px);
+        height: ($size + 10px);
+        padding: ($padding + 10px);
+    }
 }

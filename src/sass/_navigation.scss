@@ -11,8 +11,6 @@
       @media screen and (max-width: 767px) {
         display: none;
       }
-
-      
       float: left;
       width: 16.6%;
       color: #ccc;
@@ -37,17 +35,19 @@
         @media screen and (max-width: 767px) {
           background: none;
           display: inline;
-          text-align: center;
-          white-space: nowrap;
-          
-
+          color: $brand-secondary;
+          font-size: 22px;
+          width: 100%;
+          margin: 0 auto;
           &:after {
+            display: none;
+          }
+          .stepNumber {
             display: none;
           }
         }
 
         background-color: lighten($blue, 3%);
-
         &:after {
           content: "";
           position: absolute;

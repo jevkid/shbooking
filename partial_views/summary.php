@@ -1,5 +1,3 @@
-<p class="text-right"><span class="required">*</span> Indicates a required field</p>
-
 <div class="summary">
     <div class="summary-title"><p class="section-header">Booking Summary</p></div>
     <p id="hol-title">Spectacular Delights of Wigan</p>

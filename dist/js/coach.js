@@ -12,7 +12,7 @@ var availMap = {0: "Available", 1: "Unavailable", 2: "Toilet", 3: "Booked", 4: "
 for(var i = 0; i < coachInput.length; i++){    
     // The component ID needs to be sent to the BE
     componentId = coachInput[i].ComponentID;
-    // The seats are stored in SeatMapDetails
+    // The seats are stored in seat-mapDetails
     coaches = coachInput[i].SeatMapDetails;
     // Sort the seats so that they appear correctly on the map
     coaches.sort(function(a, b){
@@ -22,7 +22,7 @@ for(var i = 0; i < coachInput.length; i++){
     var numSeats = coaches.length / 4;
 
     for(var j = 1; j <= numSeats; j++){
-        $('#coachMap-' + (i + 1)).append('<li class="seatMap">' + j + '</li>');
+        $('#coachMap-' + (i + 1)).append('<li class="seat-map">' + j + '</li>');
     }
 
     for(var key in coaches){
@@ -75,7 +75,7 @@ $('html').on('click', '[data-seat-num]', function(){
         var seat = '<li class="seat" data-remove-field="' + uniqueId + '">' + seatText + '</li>';
         // var summary = '<li>' + seatText + '</li>';
 
-        $('.customerSelect').removeClass('hidden');
+        $('.customer-select').removeClass('hidden');
         $('#customerMap-' + coachCount).append(seat);
         $('#customerMap-' + coachCount).append(input);
 

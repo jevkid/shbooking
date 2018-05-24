@@ -1,23 +1,23 @@
-html{
+html {
 	-webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     text-shadow: 1px 1px 1px rgba(0,0,0,.004);
 }
 
-body{
+body {
 	font-family: 'Roboto', sans-serif;
 }
 
-p{
+p {
 	color: $charcoal;
 }
 
-a{
+a {
 	color: $blue !important;
 	text-decoration: underline !important;
 	cursor: pointer;
 
-	&.btn{
+	&.btn {
 		background-color: $green;
 		border-radius: $border-radius;
 		padding: 0.5rem 2rem;
@@ -28,47 +28,50 @@ a{
 		transition: $transition-default;
 		outline:  none !important;
 	
-		&:hover{
+		&:hover {
 			cursor: pointer;
 			background-color: darken($green, 2%);
 		}
 	
-		&.secondary{
+		&.secondary {
 			background-color: transparent;
 			border: 2px solid $blue;
 			color: $blue !important;
 		}
 	
-		&.active{
+		&.active {
 			background-color: $green;
 			color: white;
 		}
 
-		&:disabled{
+		&:disabled {
 			background-color: $grey;
 			cursor: not-allowed;
 		}
 	}
 }
 
-a:link{
+a:link {
 	color: $blue;
 }
 
-h1{
+h1 {
 	letter-spacing: -0.4px;
 }
 
-.summary{
+.summary {
 	background-color: $light-grey;
 	padding: 2rem;
 	margin: 0.8rem 0;
 	border-radius: $border-radius;
 
-	#hol-title{
+	#hol-title {
 		margin: -8px 0 0;
 		font-size: rem(20);
 		color: $blue;
+	}
+	#dep-date {
+		margin-top: 5px;
 	}
 
 	.summary-section {
@@ -97,18 +100,35 @@ h1{
 	}
 }
 
-.popular{
+.summary-block {
+	display: inline-block;
+
+	.summary-left{
+		float: right!important;
+	}
+
+	.summary-right {
+		float: right!important;
+	}
+
+	@media screen and (max-width: 767px) {
+		float: none;
+		clear: both;
+	}
+}
+
+.popular {
 	color: $yellow;
 	font-size: rem(20);
 	font-weight: 600;
 }
 
-.success-check{
+.success-check {
 	color: $green;
 	display: none !important;
 }
 
-footer{
+footer {
 	margin-top: 2rem;
 	background-color: $light-grey;
 	padding: 2rem;
@@ -118,22 +138,22 @@ footer{
 	display: none !important;
 }
 
-.text-accent-1{
+.text-accent-1 {
 	color: $green;
 }
 
-.text-accent-2{
+.text-accent-2 {
 	color: $yellow;
 }
 
-.required{
+.required {
 	color: $error-red;
 }
 /*=============================================
 =           	Titles & Headers             =
 =============================================*/
 
-.step-title{
+.step-title {
 	font-size: rem(24);
 	color: $grey;
 	font-weight: 500;
@@ -141,7 +161,7 @@ footer{
 	margin: 0;
 	padding: 0.8rem 0;
 }
-.step-section-title{
+.step-section-title {
 	font-size: rem(38);
 	color: $brand-secondary;
 	font-weight: 300;
@@ -151,41 +171,45 @@ footer{
 	text-transform: capitalize;
 }
 
-.step-section-text{
+.step-section-text {
 	font-size: rem(16);
 	font-weight: 500;
 }
 
-.section-header{
+.section-header {
 	border-bottom: 1px solid #ccc;
 	font-size: rem(20);
 	padding-bottom: rem(10);
 	margin-bottom: 1rem;
-
-	button{
+	&.header-padding {		
+		@media screen and (max-width: 767px) {
+			padding: 15px;
+		}
+	}
+	button {
 		font-size: rem(14);
 	}
 }
 
-.hidden-section-header{
+.hidden-section-header {
 	font-size: rem(20);
 	padding: rem(10) 0;
 	margin-bottom: 1rem;
 
-	p{
+	p {
 		margin-top: 5px;
 	}
 
-	button{
+	button {
 		font-size: rem(14);
 	}
 }
 
-.subtitle{
+.subtitle {
 	font-size: rem(22);
 }
 
-.section-intro{
+.section-intro {
 	font-size: rem(14);
 	margin-bottom: 2rem;
 }
@@ -222,45 +246,51 @@ footer{
 =            Form Items            =
 ==================================*/
 
-.validation-error{
+.validation-error {
 	border-color: $error-red;
 }
 
-label{
+label {
 	display: block;
 	width:100%;
 	font-weight: 500;
 }
 
-.nice-select{
+.nice-select {
 	width: 100% !important;
 	border-color: $border-grey !important;
 	text-transform: capitalize;
 
-	ul{
+	ul {
 		width: 100%;
 		overflow-y: auto!important;
 		max-height: 20.3333333333rem;
 	}
 }
 
-input{
+input {
 	padding: 0.48rem 0.8rem;
 	width: 100%;
 	border-radius: $border-radius;
 	border: 1px solid $border-grey;
 	outline: none !important;
 
-	&.error{
+	&.error {
 		border-color: $error-red;
 	}
 }
 
-.form-row{
+.form-row {
 	margin-bottom: 1rem;
+
+	label {
+		@media screen and (max-width: 767px) {
+			padding: 10px 0;
+		}
+	}
 }
 
-button{
+button {
 	background-color: $green;
 	border-radius: $border-radius;
 	padding: 0.5rem 2rem;
@@ -270,18 +300,18 @@ button{
 	transition: $transition-default;
 	outline:  none !important;
 
-	&:hover{
+	&:hover {
 		cursor: pointer;
 		background-color: darken($green, 2%);
 	}
 
-	&.secondary{
+	&.secondary {
 		background-color: transparent;
 		border: 2px solid $green;
 		color: $green;
 	}
 
-	&.active{
+	&.active {
 		background-color: $green;
 		color: white;
 	}
@@ -302,12 +332,12 @@ button{
 	}
 }
 
-.find-address, .enter-manually{
+.find-address, .enter-manually {
 	width: 49%;
 	margin-top: rem(29);
 }
 
-.form-section-title{
+.form-section-title {
 	font-size: rem(18);
 	color: $blue;
 	border-bottom: 1px dashed $border-grey;
@@ -319,8 +349,8 @@ button{
 ==================================*/
 
 
-.multi-options{
-	.option{
+.multi-options {
+	.option {
 		padding: 0.8rem;
 		border: 1px solid $border-grey;
 		transition: .3s;
@@ -329,167 +359,171 @@ button{
 		cursor: pointer;
 		border-radius: $border-radius;
 		
-		label{
+		label {
 			display: inline;
 			position: relative;
 			top: 2px;
 			margin-left: 0.3rem;
 		}
 
-		input[type="radio"]{
+		input[type="radio"] {
 			width: auto;
 		}
 
-		.price{
+		.price {
 			color: $green;
 			font-weight: 500;
 			margin-left: 1.8rem;
 		}
 
-		&.active{
+		&.active {
 			background-color: lighten($yellow, 35%);
 			border: 1px solid $yellow;
 		}
 
-		ul{
+		ul {
 			columns: 3;
 			list-style-position: inside;
 			padding-left: 0;
 
-			@include media("med"){
+			@include media("med") {
 				columns: 1;
 			}
 		}
 	}
 }
 
-.room-cabin-image{
+.room-cabin-image {
 	width: 100%;
 	height: rem(230);
 	margin-bottom: 1rem;
 }
 
-.group{
+.group {
 	margin-bottom: 1rem;
 	width: 100%;
 }
 
-.payment-method-options{
-	input[type=radio]{
+.payment-method-options {
+	input[type=radio] {
 		width: auto !important;
 	}
 
-	label{
+	label {
 		display: inline;
 		margin-left: rem(5);
 	}
 }
-.back-button {
+.back-button  {
 	text-decoration: underline;
 }
 
-.hidden{
+.hidden {
 	display: none;
 }
 
-.room-extras{
+.room-extras {
 
-	.extra-img{
+	.extra-img {
 		width: 100%;
 		height: rem(120);
 		margin-bottom: 0.5rem;
 	}
-	.item-title{
+	.item-title {
 		margin-bottom: 0.5rem;
 		font-weight: 500;
 	}
 
-	button{
+	button {
 		width: 100%;
 	}
-	.room-extra{
+	.room-extra {
 		margin-bottom: 1rem;
 	}
 
-	.price{
+	.price {
 		color: $green;
 		font-weight: 500;
 		margin: 0;
 	}
 }
 
-.show-extras{
+.show-extras {
 	width: 100%;
 }
 
-.item-title{
+.item-title {
 	font-size: rem(22);
 }
 
-.special-requirements{
+.special-requirements {
 	display: none;
 
-	ul{
+	ul {
 		columns: 3;
 		list-style-position: inside;
 		padding-left: 0;
 
-		li{
+		li {
 			list-style-type: none;
 		}
 
-		input, label{
+		input, label {
 			width: auto !important;
 			display: inline;
 		}
 
-		label{
+		label {
 			margin-left: 0.3rem;
 		}
 
-		@include media("med"){
+		@include media("med") {
 			columns: 1;
 		}
 	}
 }
 
-.guest{
+.guest {
 	background-color: $light-grey;
 	padding: 1rem;
 	margin-bottom: 1rem;
 }
 
-.outward-info, .return-info{
+.outward-info, .return-info {
 	color: $green;
 	font-weight: 500;
 }
 
-#stepone-lead-passenger{
+#stepone-lead-passenger {
 	background-color: $light-grey;
 }
 
-.passenger-type-container{
+.passenger-type-container {
 	width: 100%;
 
-	.passenger-type{
+	.passenger-type {
 		font-size: rem(18);
 		color: $blue;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
 		display: block;
+		@media screen and (max-width: 767px) {
+			margin: 10px 0;
+			position: relative;
+		}
 	}
 }
 
-[data-pax]{
+[data-pax] {
 	border-bottom: 1px dashed $border-grey;
 	padding-bottom: 1rem;
 
-	&:last-of-type{
+	&:last-of-type {
 		border-bottom: 0;
 	}
 }
 
-.fa.fa-star{
+.fa.fa-star {
 	color: $yellow;
 }

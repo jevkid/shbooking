@@ -17,7 +17,7 @@
 			<div class="row form-row" data-pax="1">
 				<div class="col-12 col-md-2">
 					<div class="passenger-type-container">
-						<div class="passenger-type"><i class="fa fa-star" aria-hidden="true"   data-toggle="tooltip" data-placement="top" title="The lead passenger will be the main point of contact if we need to get hold of you. They do not need to be the person who will be paying."></i> Adult</div>
+						<div class="passenger-type"><i class="fa fa-star" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="The lead passenger will be the main point of contact if we need to get hold of you. They do not need to be the person who will be paying."></i> Adult</div>
 					</div>
 				</div>
 				<div class="col-12 col-md-2">
@@ -78,7 +78,7 @@
 			<div class="section-header">
 				<div class="row">
 					<div class="col-12 col-md-6">Room/Group 2</div>
-					<div class="col-12 col-md-6 text-right">1 Adult</div>
+					<div class="col-12 col-md-6 text-left text-md-right">1 Adult</div>
 				</div>
 			</div>
 

@@ -25,8 +25,12 @@
 		<?php include("partial_views/nav.php"); ?>
 
 		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-8">
+			<div class="row summary-block">
+				<div class="col-12 col-md-4 summary-right">
+					<?php include("partial_views/summary.php"); ?>
+				</div>
+				<div class="col-12 col-md-8 summary-left">
+					<p class="text-right"><span class="required">*</span> Indicates a required field</p>
 					<div data-step="1" data-next="travel" data-current="party" data-summary-id="party">
 						<?php include("partial_views/yourParty-1.php"); ?>
 					</div>
@@ -57,9 +61,9 @@
 					<div class="hidden" data-step="10" data-current="confirm">
 						<?php include("partial_views/payment-9.php"); ?>
 					</div>
-					<div data-alert class="col-8 error alert alert-warning text-left hidden">Please ensure you have filled out all required fields.</div>
-
-					<div class="row">
+					<div data-alert class="col-12 col-md-8 mt-3 alert alert-warning text-left hidden">Please ensure you have filled out all required fields.</div>
+					
+					<div class="row mt-4">
 						<div class="col-6">
 							<a href="#" class="back-button btn secondary hidden" data-previous-step>Back</a>
 						</div>
@@ -68,12 +72,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-4">
-					<?php include("partial_views/summary.php"); ?>
-				</div>
 			</div>
 		</div>
-
+		
 		<?php include("partial_views/footer.php"); ?>
 
 		<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>

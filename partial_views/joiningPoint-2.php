@@ -3,17 +3,12 @@
 		<p class="step-title">Step 2</p>
 		<p class="step-section-title">Travel</p>
 	</div>
-</div>
-<div class="row">
 	<div class="col-12">
 		<p class="subtitle">How would you like to join your holiday?</p>
 		<p class="section-intro">We have three easy ways for you to join your Shearings holiday, ensuring your travel arrangements are most suitable for you. Find out about our tour connect, direct connect and home connect options below and choose the one that work’s best for you. </p>
 	</div>
-</div>
-<div class="row">
 	<div class="col-12">
 		<div class="multi-options" data-parent="group">
-			
 			<div class="option">
 				<div class="row">
 					<div class="col-12 col-md-3">
